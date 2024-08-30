@@ -14,7 +14,7 @@ export default function ExperienceAccordion() {
         <div key={index} className="border-b-2 border-b-lavender">
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full flex justify-between items-center p-4 text-obsidian hover:bg-obsidian hover:text-lavender  focus:outline-none"
+            className="w-full flex justify-between items-center p-4 text-obsidian hover:bg-lavender  hover:text-obsidian  focus:outline-none"
           >
             <div className="flex flex-col items-start justify-start">
               <div className="text-lg font-medium">{experience.role}</div>
@@ -24,23 +24,10 @@ export default function ExperienceAccordion() {
             </div>
             <div
               className={`transform transition-transform duration-200 ${
-                activeIndex === index ? "rotate-180" : "rotate-0"
+                activeIndex === index ? "rotate-[135deg]" : "rotate-0"
               }`}
             >
-              <svg
-                className="w-6 h-6 text-cream"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
+              <p className="w-11 h-w-11 text-cream font-Cinzel font-bold">+</p>
             </div>
           </button>
           {activeIndex === index && (

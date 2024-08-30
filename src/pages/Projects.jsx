@@ -1,8 +1,29 @@
+import React, { useRef } from "react";
+import { useScroll } from "framer-motion";
+import { projects } from "../filling/projects";
+import Card from "../components/Card";
 export default function Projects() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
   return (
-    <div className={` min-h-screen p-8`}>
-      <h2 className={`text-4xl text-obsidian`}>My Projects</h2>
-      <div className="mt-4">{/* List your projects here */}</div>
-    </div>
+    <main ref={container} className="relative ">
+      {projects.map((project, i) => {
+        const targetScale = 1 - (projects.length - i) * 0.05;
+        return (
+          <Card
+            key={`p_${i}`}
+            {...project}
+            i={i}
+            progress={scrollYProgress}
+            range={[i * 0.25, 1]}
+            targetScale={targetScale}
+          />
+        );
+      })}
+    </main>
   );
 }

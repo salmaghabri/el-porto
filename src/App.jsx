@@ -11,8 +11,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <Background />
-      <div className="App relative flex items-center justify-center min-h-screen">
+      {/* <Background /> */}
+      <div className="App relative flex items-center justify-center min-h-screen bg-cream">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

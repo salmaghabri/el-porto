@@ -1,10 +1,11 @@
+import EducationTimeline from "../components/EducationTimeline";
 import ExperienceAccordion from "../components/ExperienceAccordion";
 import { SectionTitle } from "../components/SectionTitle";
 import SkillsContainer from "../components/SkillsContainer";
 
 export default function About() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <div className="relative flex items-center justify-center min-h-screen w-full">
         <section>
           <div
@@ -49,7 +50,14 @@ export default function About() {
         </p>
       </section>
       <section>
+        <SectionTitle title="Skills" id={3} />
+
         <SkillsContainer />
+      </section>
+      <section>
+        <SectionTitle title="Education" id={3} />
+
+        <EducationTimeline />
       </section>
       <section>
         <SectionTitle title="Work" id={1} />
