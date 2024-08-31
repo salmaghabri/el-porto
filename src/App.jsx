@@ -7,12 +7,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
+
 import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
       {/* <Background /> */}
-      <div className="App  bg-cream">
+
+      <div className="App relative top-0 bg-cream mx-16">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

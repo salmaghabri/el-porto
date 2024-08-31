@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* folded paper effect */
+body {
+  margin: 0;
+  background-color: #fff6ee;
+}
 .form {
   width: 300px;
   padding: 7%;
