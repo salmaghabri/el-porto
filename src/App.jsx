@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       {/* <Background /> */}
-      <div className="App relative flex items-center justify-center min-h-screen bg-cream">
+      <div className="App  bg-cream">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
