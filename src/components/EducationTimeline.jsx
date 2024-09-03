@@ -1,5 +1,6 @@
 import { useState } from "react";
 import educationData from "../filling/educationData";
+import Button from "./Button";
 export default function EducationTimeline() {
   const [visibleItems, setVisibleItems] = useState(2);
 
@@ -35,12 +36,7 @@ export default function EducationTimeline() {
       ))}
 
       {visibleItems < educationData.length && (
-        <button
-          onClick={handleExpand}
-          className="mt-4 text-lime hover:text-blue-800 font-semibold"
-        >
-          Show More
-        </button>
+        <Button text="More" onClick={handleExpand} />
       )}
     </div>
   );

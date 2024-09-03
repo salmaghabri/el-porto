@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import skillsData from "../filling/skillsData";
+import "../../public/styles/skills.css";
 
 export const spring = {
   gentle: {
@@ -12,78 +13,68 @@ export const spring = {
 };
 
 const bubbleVariants = {
-  initial: {
-    y: -100,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: spring.gentle,
-  },
   hover: {
     scale: 1.2,
     transition: { type: "spring", stiffness: 150 },
   },
+  drop: {
+    y: [0, 100, 0],
+    transition: {
+      type: "spring",
+      damping: 10,
+      stiffness: 200,
+    },
+  },
 };
 
 const SkillBubble = ({ skills }) => (
-  <div className="flex flex-wrap justify-center items-center w-full h-full p-4">
+  <div className="relative w-full h-full flex flex-wrap justify-center items-center">
     {skills.map((skill, index) => (
-      <motion.div
+      <motion.img
         key={index}
-        className="w-12 h-12 flex items-center justify-center bg-obsidian text-cream rounded-full text-xs mx-2 mb-2 z-30"
+        className="bubble w-12 h-12 flex items-center justify-center rounded-full text-xs mx-2 mb-2 z-30 text-red-50"
         variants={bubbleVariants}
         initial="initial"
         animate="animate"
         whileHover="hover"
+        // style={{
+        //   backgroundImage: `url(assets/techno/${skill.toLowerCase()}.svg)`,
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center",
+        //   backgroundSize: "cover",
+        // }}
+        src={`assets/techno/${skill.toLowerCase()}.svg`}
+        alt={skill}
         drag
         dragConstraints={{ top: 0, left: -50, right: 50, bottom: 30 }}
-      >
-        {skill}
-      </motion.div>
+      />
     ))}
   </div>
 );
 
 export default function SkillsContainer() {
   return (
-    <div className="flex flex-wrap justify-center p-8">
-      {Object.keys(skillsData).map((key) => {
+    <div className="relative w-full h-screen flex flex-wrap justify-center ">
+      {Object.keys(skillsData).map((key, index) => {
         const { label, skills } = skillsData[key];
         return (
-          <div
+          <motion.div
             key={key}
-            className="relative flex flex-col items-center mx-6 mb-8"
+            className="relative flex flex-col items-center w-60 h-60"
+            transition={{
+              type: "spring",
+              stiffness: 20,
+              damping: 10,
+              delay: index * 0.2,
+            }}
+            drag
+            // dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           >
-            <div className="flex items-center justify-center w-48 h-48 bg-lavender rounded-full relative p-4">
+            <div className="relative flex flex-col items-center justify-center w-full h-full border-4 border-lime rounded-full p-4 item-bicolor  gradient">
+              <h1>{label}</h1>
               <SkillBubble skills={skills} />
-              <svg
-                viewBox="0 0 120 120"
-                className="absolute -rotate-90  top-[-15%] left-0 w-full h-full z-10"
-              >
-                <path
-                  id={label}
-                  d="
-                    M 60, 60
-                    m -50, 0
-                    a 50,50 0 1,1 100,0
-                    a 50,50 0 1,1 -100,0
-                    "
-                  fill="transparent"
-                />
-                <text>
-                  <textPath
-                    href={`#${label}`}
-                    startOffset="50%"
-                    textAnchor="middle"
-                  >
-                    {label}
-                  </textPath>
-                </text>
-              </svg>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>

@@ -1,0 +1,29 @@
+export default function Button({ text, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      className="
+      my-2
+      rounded-lg 
+      border
+      border-solid 
+      border-obsidian 
+      border-b-[6px]
+      border-r-4 
+      py-2.5 
+      px-5 
+      text-base 
+      font-medium 
+      bg-cream 
+      text-obsidian 
+      cursor-pointer 
+      hover:border-b-2
+      hover:border-2 
+      hover:border-r-2 
+      hover:border-obsidian
+    "
+    >
+      {text}
+    </button>
+  );
+}

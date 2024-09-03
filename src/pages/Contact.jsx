@@ -1,5 +1,6 @@
 import { useState } from "react";
 import socialMediaContacts from "../filling/socialMediaContacts";
+import Button from "../components/Button";
 
 export default function Contact() {
   // form
@@ -24,7 +25,6 @@ export default function Contact() {
     window.location.href = mailtoLink;
   };
 
-  // constacts
   const [visibleContacts, setVisibleContacts] = useState(3);
 
   const showMoreContacts = () => {
@@ -33,10 +33,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-8  min-h-screen">
-      <div className="form w-full md:w-2/3 p-8 bg-cream shadow-lg rounded-lg border-2 border-gray-300">
-        <h2 className="text-3xl font-serif mb-8 text-center">
-          Write Me a Letter
-        </h2>
+      <div className="form w-full md:w-2/3 p-8 bg-cream shadow-lg rounded-lg border-2 border-cherry">
         <form onSubmit={handleSubmit} className="space-y-6 ">
           <div className="mb-4">
             <label
@@ -77,18 +74,28 @@ export default function Contact() {
             type="submit"
             className="w-full bg-blue-500 text-white font-serif text-lg py-3 rounded-md hover:bg-blue-600 transition duration-300"
           >
-            Send Your Letter
+            Send Letter
           </button>
         </form>
       </div>
 
       <div className="socials w-full md:w-1/2 p-4">
-        <h3 className="text-xl font-semibold mb-4">Connect with Me:</h3>
-        <ul className="space-y-4">
+        <h3 className="text-5xl text-cherry font-Cinzel">
+          Thank you for your visit!{" "}
+        </h3>
+        <h3>
+          <span className="text-5xl text-cherry font-Cinzel">← </span> Any
+          unanswered question? or no need to have a question to contact me!{" "}
+        </h3>
+        <h3>
+          you can write me in english, french, arabic or German(A2 level){" "}
+        </h3>
+        <h3>you can find me here too</h3>
+        <div className="space-y-4 flex items-center gap-2 flex-wrap">
           {socialMediaContacts
             .slice(0, visibleContacts)
             .map((contact, index) => (
-              <li key={index} className="flex items-center space-x-4">
+              <div key={index} className="flex items-center space-x-4">
                 <img
                   src={contact.iconPath}
                   alt={`${contact.name} icon`}
@@ -102,16 +109,11 @@ export default function Contact() {
                 >
                   {contact.name}
                 </a>
-              </li>
+              </div>
             ))}
-        </ul>
+        </div>
         {visibleContacts < socialMediaContacts.length && (
-          <button
-            onClick={showMoreContacts}
-            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-          >
-            More
-          </button>
+          <Button text="More" onClick={showMoreContacts} />
         )}
       </div>
     </div>

@@ -5,7 +5,7 @@ const Card = ({ name, highlights, progress, range, targetScale, i }) => {
   return (
     <div className="h-screen flex items-center justify-center sticky top-0">
       <motion.div
-        className="relative flex flex-col p-8 bg-white shadow-lg rounded-lg w-1/2 h-1/2 ring-4 ring-lime"
+        className="relative flex flex-col p-8 bg-white shadow-lg rounded-lg w-1/2 h-1/2 ring-4 ring-cherry"
         style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
       >
         <h2 className="text-2xl font-bold mb-4">{name}</h2>
