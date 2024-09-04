@@ -147,8 +147,11 @@ export default function About() {
         <EducationTimeline />
       </section>
       <section className=" border-b-4 border-r-4 border-cherry">
-        <SectionTitle title="Work" id={1} />
-
+        <h1
+          className={`text-5xl -mt-[6%] ml-[50%] border-4 border-cherry px-4 border-t-transparent  text-cherry font-Cinzel animate-fadeIn inline-block bg-cream  `}
+        >
+          work
+        </h1>
         <ExperienceAccordion />
       </section>
     </div>

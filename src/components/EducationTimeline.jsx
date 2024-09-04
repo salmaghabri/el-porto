@@ -1,6 +1,7 @@
 import { useState } from "react";
 import educationData from "../filling/educationData";
 import Button from "./Button";
+import Badge from "./Badge";
 export default function EducationTimeline() {
   const [visibleItems, setVisibleItems] = useState(2);
 
@@ -25,11 +26,11 @@ export default function EducationTimeline() {
               <p className="text-sm text-gray-500">
                 {edu.institution} | {edu.startDate} - {edu.endDate}
               </p>
-              <ul className="mt-2 text-sm text-gray-700 list-disc list-inside">
+              <div className="mt-2 text-sm text-gray-700 flex gap-3 flex-wrap">
                 {edu.highlights.map((highlight, idx) => (
-                  <li key={idx}>{highlight}</li>
+                  <Badge key={idx} text={highlight} />
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -10,8 +10,7 @@ export default function Home() {
           Salma <span className="font-Vioda text-lime"> * </span>Ghabri
         </h1>
         <p className={`text-lg text-lavender] mt-4`}>
-          I'm a frontend developer passionate about building beautiful and
-          functional websites.
+          An engineer (in the making).
         </p>
       </div>
     </div>
