@@ -32,17 +32,11 @@ const SkillBubble = ({ skills }) => (
     {skills.map((skill, index) => (
       <motion.img
         key={index}
-        className="bubble w-12 h-12 flex items-center justify-center rounded-full text-xs mx-2 mb-2 z-30 text-red-50"
+        className="bubble w-10 h-16 flex items-center justify-center rounded-full  mx-2 mb-2 z-30 object-contain scale-110"
         variants={bubbleVariants}
         initial="initial"
         animate="animate"
         whileHover="hover"
-        // style={{
-        //   backgroundImage: `url(assets/techno/${skill.toLowerCase()}.svg)`,
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundPosition: "center",
-        //   backgroundSize: "cover",
-        // }}
         src={`assets/techno/${skill.toLowerCase()}.svg`}
         alt={skill}
         drag
@@ -68,10 +62,12 @@ export default function SkillsContainer() {
               delay: index * 0.2,
             }}
             drag
-            // dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+            dragConstraints={{ top: 20, left: 25, right: 25, bottom: 20 }}
           >
-            <div className="relative flex flex-col items-center justify-center w-full h-full border-4 border-lime rounded-full p-4 item-bicolor  gradient">
-              <h1>{label}</h1>
+            <div className="bg-cream relative flex flex-col items-center  w-full h-full border-t-4 border-r-4   border-cherry rounded-full p-3">
+              <h1 className=" font-Vioda text-cherry font-bold  border-1 border-cherry p-1 border-b-cream -mt-[20%] mb-2">
+                {label}
+              </h1>
               <SkillBubble skills={skills} />
             </div>
           </motion.div>
