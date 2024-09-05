@@ -91,23 +91,26 @@ export default function Contact() {
           you can write me in english, french, arabic or German(A2 level){" "}
         </h3>
         <h3>you can find me here too</h3>
-        <div className="space-y-4 flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap">
           {socialMediaContacts
             .slice(0, visibleContacts)
             .map((contact, index) => (
-              <div key={index} className="flex items-center space-x-4">
-                <img
-                  src={contact.iconPath}
-                  alt={`${contact.name} icon`}
-                  className="w-6 h-6"
-                />
+              <div
+                key={index}
+                className="flex border border-red items-center gap-2"
+              >
                 <a
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  {contact.name}
+                  <img
+                    src={contact.iconPath}
+                    alt={`${contact.name} icon`}
+                    className="w-6 h-6"
+                  />
+                  {/* {contact.name} */}
                 </a>
               </div>
             ))}
