@@ -28,7 +28,7 @@ export default function EducationTimeline() {
               </p>
               <div className="mt-2 text-sm text-gray-700 flex gap-3 flex-wrap">
                 {edu.highlights.map((highlight, idx) => (
-                  <Badge key={idx} text={highlight} />
+                  <Badge key={idx}>{highlight}</Badge>
                 ))}
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function EducationTimeline() {
       ))}
 
       {visibleItems < educationData.length && (
-        <Button text="More" onClick={handleExpand} />
+        <Button onClick={handleExpand}>More</Button>
       )}
     </div>
   );

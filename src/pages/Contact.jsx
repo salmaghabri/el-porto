@@ -1,6 +1,7 @@
 import { useState } from "react";
 import socialMediaContacts from "../filling/socialMediaContacts";
 import Button from "../components/Button";
+import Badge from "../components/Badge";
 
 export default function Contact() {
   // form
@@ -50,9 +51,9 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-3 py-2  focus:outline-none font-serif text-xl bg-transparent placeholder-gray-400"
+              className="w-full px-3 py-2  focus:outline-none font-serif text-xl bg-transparent placeholder-lavender"
               rows="6"
-              placeholder="Your Message"
+              placeholder="I'm writing to remind you to touch grass"
               required
             ></textarea>
           </div>
@@ -69,55 +70,53 @@ export default function Contact() {
               required
             />
           </div>
-
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white font-serif text-lg py-3 rounded-md hover:bg-blue-600 transition duration-300"
-          >
-            Send Letter
-          </button>
+          <Badge>
+            <button
+              type="submit"
+              className="w-full text-cherry font-serif text-lg  "
+            >
+              Send Letter
+            </button>
+          </Badge>
         </form>
       </div>
 
-      <div className="socials w-full md:w-1/2 p-4">
-        <h3 className="text-5xl text-cherry font-Cinzel">
-          Thank you for your visit!{" "}
+      <div className="socials w-full md:w-1/2 p-6 bg-gradient-to-br from-white to-pink-50 rounded-lg shadow-lg">
+        <h3 className="text-5xl text-cherry font-Cinzel mb-4">
+          Thank you for stopping by!{" "}
         </h3>
-        <h3>
-          <span className="text-5xl text-cherry font-Cinzel">← </span> Any
-          unanswered question? or no need to have a question to contact me!{" "}
+        <h3 className="text-lg text-gray-600 mb-4">
+          <span className="text-5xl text-cherry font-Cinzel">← </span> Got any
+          questions? Or maybe just want to say hi? Feel free to drop a message
         </h3>
-        <h3>
-          you can write me in english, french, arabic or German(A2 level){" "}
+        <h3 className="text-lg text-gray-600 mb-4">
+          (I understand English, French, Arabic, or German (and not A2 level)){" "}
         </h3>
-        <h3>you can find me here too</h3>
-        <div className="flex items-center gap-2 flex-wrap">
+        <h3 className="text-lg text-gray-600 mb-6">
+          You can find me across these platforms:
+        </h3>
+        <div className="flex items-center gap-4 flex-wrap">
           {socialMediaContacts
             .slice(0, visibleContacts)
             .map((contact, index) => (
-              <div
-                key={index}
-                className="flex border border-red items-center gap-2"
-              >
+              <Badge key={index}>
                 <a
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
                 >
                   <img
                     src={contact.iconPath}
                     alt={`${contact.name} icon`}
                     className="w-6 h-6"
                   />
-                  {/* {contact.name} */}
                 </a>
-              </div>
+              </Badge>
             ))}
+          {visibleContacts < socialMediaContacts.length && (
+            <Button onClick={showMoreContacts}>+</Button>
+          )}
         </div>
-        {visibleContacts < socialMediaContacts.length && (
-          <Button text="More" onClick={showMoreContacts} />
-        )}
       </div>
     </div>
   );

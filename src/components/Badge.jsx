@@ -1,4 +1,4 @@
-export default function Badge({ text }) {
+export default function Badge({ children }) {
   return (
     <button
       className="
@@ -15,10 +15,10 @@ export default function Badge({ text }) {
       bg-cream 
       text-cherry 
       hover:text-cream
-      hover:bg-lavender
+      hover:bg-lime
     "
     >
-      {text}
+      {children}
     </button>
   );
 }

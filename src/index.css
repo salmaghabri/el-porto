@@ -76,3 +76,29 @@ body {
   background-position: right top, left center, left bottom, left top, left top,
     right top, left center, right center, right center, left bottom;
 }
+
+/* button */
+.nested-border {
+  position: relative;
+  padding: 10px;
+}
+
+.nested-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px double black;
+  pointer-events: none; /* Allows clicks to pass through */
+  box-sizing: border-box; /* Ensure padding is included in the total size */
+}
+
+.button-content {
+  position: relative;
+  border: 2px solid black; /* Inner border style */
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
