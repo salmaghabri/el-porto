@@ -3,6 +3,8 @@ export default function Button({ children, onClick }) {
     <div
       className="border-l border-t border-transparent  rounded-lg  hover:border-b-4
       hover:border-r-2 
+      hover:border-l-0
+      hover:border-t-0 
       "
     >
       <button
