@@ -1,30 +1,50 @@
+import { useState } from "react";
+
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("salmaghabri@gmail.com");
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
   return (
     <div
       className="relative h-[200px] bg-obsidian "
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[200px] w-full">
+      <div className="fixed bottom-0 h-[200px] w-full pt-4">
         <div className="flex flex-col gap-4  text-cream items-center justify-center">
-          <div className="connect flex flex-col">
-            <h1>Drop me a line</h1>
-            <div className="flex gap-2  ">
-              <svg
-                // fill=" #fff6ee"
-                className="fill-cream transition-colors duration-300 hover:fill-lime "
-                viewBox="0 0 92 92"
-                xmlns="http://www.w3.org/2000/svg"
+          <div className="connect flex flex-col gap-4 ">
+            <h1 className="font-bold font-Vioda text-xl ">Drop me a line</h1>
+            <div className="flex gap-2">
+              <div
+                className="relative w-full h-full cursor-pointer"
+                onClick={handleCopy}
               >
-                <g>
-                  <path d="m22.6354 66.1963h8.4828v-20.6008l-12.1182-9.0887v26.0541c0 2.0116 1.6299 3.6354 3.6354 3.6354z" />
-                  <path d="m60.2012 66.1963h8.4827c2.0116 0 3.6354-1.6299 3.6354-3.6354v-26.0541l-12.1181 9.0887" />
-                  <path d="m60.2012 29.8421v15.7536l12.1181-9.0887v-4.8472c0-4.4959-5.132-7.0589-8.725-4.3626" />
-                  <path d="m31.1172 45.5954v-15.7536l14.5418 10.9063 14.5418-10.9063v15.7536l-14.5418 10.9064" />
-                  <path d="m19 31.6598v4.8472l12.1182 9.0887v-15.7536l-3.3931-2.5449c-3.5991-2.6963-8.7251-.1333-8.7251 4.3626z" />
-                </g>
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 50 50"
+                  className="fill-cream transition-colors duration-300 hover:fill-lime cursor-pointer"
+                >
+                  <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
+                </svg>
+
+                {copied && (
+                  <div className="absolute -bottom-[120%] -left-1/2 bg-cherry  text-lime text-xs w-[6rem] px-3 py-1 rounded-md ">
+                    Email copied!
+                  </div>
+                )}
+              </div>
+
               <svg
-                className="fill-cream transition-colors duration-300 hover:fill-lime "
+                className="fill-cream transition-colors duration-300 hover:fill-lime"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,15 +55,21 @@ export default function Footer() {
               <svg
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
-                className="fill-cream transition-colors duration-300 hover:fill-lime "
+                className="fill-cream transition-colors duration-300 hover:fill-lime"
               >
                 <path d="m31.937 6.093c-1.177.516-2.437.871-3.765 1.032 1.355-.813 2.391-2.099 2.885-3.631-1.271.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 .521.063 1.021.172 1.495-5.453-.255-10.287-2.875-13.52-6.833-.568.964-.891 2.084-.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-.031-2.083-.328-2.968-.817v.079c0 3.181 2.26 5.833 5.26 6.437-.547.145-1.131.229-1.724.229-.421 0-.823-.041-1.224-.115.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-.521 0-1.041-.025-1.563-.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-.276 0-.557-.021-.839 1.287-.917 2.401-2.079 3.281-3.396z" />
               </svg>
             </div>
           </div>
-          <div className="border border-current rounded-[80%] w-3/4 animate-fadeIn text-lime"></div>
-          <h1>Designed and Created by Salma</h1>
-          <h1>Website built with React, tailwind and framer motion</h1>
+          <div className="border border-current rounded-[80%] w-3/4  text-cherry"></div>
+          <div className="text-center">
+            <h1 className="font-light text-sm text-lime ">
+              Website built by Salma with React, Tailwind and framer motion
+            </h1>
+            <h1 className="font-light text-sm text-lime opacity-45">
+              Last update Sept 2024
+            </h1>
+          </div>
         </div>
       </div>
     </div>

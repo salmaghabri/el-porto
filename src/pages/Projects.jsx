@@ -10,7 +10,7 @@ export default function Projects() {
   });
 
   return (
-    <main ref={container} className="relative ">
+    <main ref={container} className="relative px-16 ">
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (

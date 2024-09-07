@@ -37,7 +37,7 @@ export default function About() {
     });
   }, []);
   return (
-    <div className="flex flex-col w-full" ref={container}>
+    <div className="flex flex-col w-full px-16" ref={container}>
       <section className=" border-b-4 border-r-4  mt-20 border-cherry flex flex-col">
         <h1 className={`text-5xl text-cherry font-Cinzel w-1/3 mt-8`}>
           I graduated college and all I got is
@@ -111,7 +111,8 @@ export default function About() {
             has been shaped by diverse experiences, from building full-stack web
             applications to conducting research in computer vision. I thrive in
             challenging environments that require creative thinking and
-            adaptability. Whether it's mastering new technologies or working
+            adaptability. Whether it's mastering new{" "}
+            <span className="animated-link">technologies </span>or working
             within dynamic teams, I'm committed to continuous learning and
             delivering impactful solutions.
           </p>

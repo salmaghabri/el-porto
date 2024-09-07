@@ -33,8 +33,46 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-8  min-h-screen">
-      <div className="form w-full md:w-2/3 p-8 bg-cream shadow-lg rounded-lg border-2 border-cherry">
+    <div className="flex flex-col md:flex-row gap-5 justify-center px-16 py-16 min-h-screen">
+      <div className="socials w-full md:w-1/2 p-6 bg-gradient-to-br from-cherry to-lavender rounded-lg ">
+        <h3 className="text-5xl text-cream font-Cinzel mb-4">
+          Thank you for stopping by!{" "}
+        </h3>
+        <h3 className="text-lg text-cream mb-4">
+          Got any questions? Or maybe just want to say hi? Feel free to drop a
+          message
+        </h3>
+        <h3 className="text-lg text-cream mb-4">
+          (I understand English, French, Arabic, or German (and not A2 level)){" "}
+        </h3>
+        <h3 className="text-lg text-cream mb-6">
+          You can find me across these platforms:
+        </h3>
+        <div className="flex items-center gap-4 flex-wrap">
+          {socialMediaContacts
+            .slice(0, visibleContacts)
+            .map((contact, index) => (
+              <Badge key={index}>
+                <a
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={contact.iconPath}
+                    alt={`${contact.name} icon`}
+                    className="w-6 h-6"
+                  />
+                </a>
+              </Badge>
+            ))}
+          {visibleContacts < socialMediaContacts.length && (
+            <Button onClick={showMoreContacts}>+</Button>
+          )}
+        </div>
+      </div>
+
+      <div className="form w-full md:w-2/3 p-8  shadow-lg rounded-lg border-2 border-cream bg-gradient-to-tl from-cream to-lime ">
         <form onSubmit={handleSubmit} className="space-y-6 ">
           <div className="mb-4">
             <label
@@ -75,48 +113,10 @@ export default function Contact() {
               type="submit"
               className="w-full text-cherry font-serif text-lg  "
             >
-              Send Letter
+              Send
             </button>
           </Badge>
         </form>
-      </div>
-
-      <div className="socials w-full md:w-1/2 p-6 bg-gradient-to-br from-white to-pink-50 rounded-lg shadow-lg">
-        <h3 className="text-5xl text-cherry font-Cinzel mb-4">
-          Thank you for stopping by!{" "}
-        </h3>
-        <h3 className="text-lg text-gray-600 mb-4">
-          <span className="text-5xl text-cherry font-Cinzel">← </span> Got any
-          questions? Or maybe just want to say hi? Feel free to drop a message
-        </h3>
-        <h3 className="text-lg text-gray-600 mb-4">
-          (I understand English, French, Arabic, or German (and not A2 level)){" "}
-        </h3>
-        <h3 className="text-lg text-gray-600 mb-6">
-          You can find me across these platforms:
-        </h3>
-        <div className="flex items-center gap-4 flex-wrap">
-          {socialMediaContacts
-            .slice(0, visibleContacts)
-            .map((contact, index) => (
-              <Badge key={index}>
-                <a
-                  href={contact.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={contact.iconPath}
-                    alt={`${contact.name} icon`}
-                    className="w-6 h-6"
-                  />
-                </a>
-              </Badge>
-            ))}
-          {visibleContacts < socialMediaContacts.length && (
-            <Button onClick={showMoreContacts}>+</Button>
-          )}
-        </div>
       </div>
     </div>
   );
