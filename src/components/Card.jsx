@@ -40,19 +40,23 @@ const Card = ({
               <Line color={"cherry"} width={"1/3"} />
             </div>
 
-            <ul className="space-y-2">
+            <div className="space-y-2">
               {description
                 .slice(0, visibleDescriptionCount)
                 .map((highlight, idx) => (
-                  <li key={idx} className="text-gray-700">
+                  <p key={idx} className="text-gray-700">
                     {highlight}
-                  </li>
+                  </p>
                 ))}
-            </ul>
-            {visibleDescriptionCount < description.length && (
-              <Button onClick={handleShowMore}>Tell me more</Button>
-            )}
-            <Line color={"lime"} width={"3/4"} />
+              <span className="inline-block">
+                {visibleDescriptionCount < description.length && (
+                  <Button onClick={handleShowMore}>Tell me more</Button>
+                )}
+              </span>
+            </div>
+            <div className="line-wrapper mt-auto mb-6">
+              <Line color={"lime"} width={"3/4"} />
+            </div>
           </div>
 
           <div className="card-footer flex justify-between mt-auto">

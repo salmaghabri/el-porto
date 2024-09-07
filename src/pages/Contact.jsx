@@ -34,18 +34,18 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col md:flex-row gap-5 justify-center px-16 py-16 min-h-screen">
-      <div className="socials w-full md:w-1/2 p-6 bg-gradient-to-br from-cherry to-lavender rounded-lg ">
-        <h3 className="text-5xl text-cream font-Cinzel mb-4">
+      <div className="socials w-full md:w-1/2 px-6 border-2 text-cherry border-cherry ">
+        <h3 className="text-3xl inline-block  -mt-[14rem] font-medium  bg-cream text-cherry font-Cinzel animate-fadeIn ">
           Thank you for stopping by!{" "}
         </h3>
-        <h3 className="text-lg text-cream mb-4">
+        <h3 className="text-lg  mb-4">
           Got any questions? Or maybe just want to say hi? Feel free to drop a
           message
         </h3>
-        <h3 className="text-lg text-cream mb-4">
+        <h3 className="text-lg  mb-4">
           (I understand English, French, Arabic, or German (and not A2 level)){" "}
         </h3>
-        <h3 className="text-lg text-cream mb-6">
+        <h3 className="text-lg  mb-6">
           You can find me across these platforms:
         </h3>
         <div className="flex items-center gap-4 flex-wrap">
@@ -72,7 +72,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="form w-full md:w-2/3 p-8  shadow-lg rounded-lg border-2 border-cream bg-gradient-to-tl from-cream to-lime ">
+      <div className="form w-full md:w-2/3 p-8  shadow-lg rounded-lg  ">
         <form onSubmit={handleSubmit} className="space-y-6 ">
           <div className="mb-4">
             <label

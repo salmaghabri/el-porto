@@ -95,15 +95,12 @@ export default function About() {
       </section>
 
       <section className=" border-b-4 border-l-4 border-cherry ">
-        {/* <SectionTitle title="Hi" id={1} /> */}
-        {/* <div className="-mt-20 -ml-6  flex flex-col text-obsidian"> */}
         <div
           className={` inline-block -ml-6 mt-6  bg-cream text-5xl text-cherry font-Cinzel animate-fadeIn `}
         >
           Hi
         </div>
-        {/* <div className="border border-current rounded-[80%] max-w-3xl animate-fadeIn text-lime"></div> */}
-        {/* </div> */}
+
         <div className="flex  mb-12 ">
           <p className="font-Vioda w-full max-w-full p-24 content-center ">
             I'm Salma Ghabri, an aspiring software engineer with a passion for
