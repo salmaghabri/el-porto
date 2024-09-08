@@ -223,12 +223,12 @@
 .sun {
   background: white;
   border-radius: 50%;
-  width: 20vmin;
-  height: 20vmin;
-  left: calc(60% + 20vmin);
+  width: 23vmin;
+  height: 23vmin;
+  left: calc(50% + 9vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
-  animation: rise 20s infinite;
+  animation: rise 12s forwards;
   box-shadow: 0 0 10px white;
 }
 
@@ -303,17 +303,14 @@
 }
 
 @keyframes rise {
-  50% {
-    top: 50%;
-  }
   100% {
-    top: 0;
+    top: 40%;
   }
 }
 
 @keyframes rise {
   100% {
-    transform: translate3d(0, -100vh, 20vmin);
+    /* transform: translate3d(0, -100vh, 20vmin); */
   }
 }
 @keyframes rise-reflection {
@@ -339,7 +336,7 @@
   top: 0;
   bottom: 0;
   background: radial-gradient(circle at 60% 100%, var(--s2), transparent);
-  animation: fade 20s infinite;
+  /* animation: fade 20s forwards; */
   mix-blend-mode: color-burn;
 }
 
@@ -354,7 +351,7 @@
 }
 .sun-container-reflection {
   top: 50%;
-  background: radial-gradient(circle at 60% 0%, var(--s2), transparent);
+  /* background: radial-gradient(circle at 60% 0%, var(--s2), transparent); */
 }
 .sun-container-reflection .sun {
   background: linear-gradient(white, rgba(255, 255, 255, 0));
@@ -363,43 +360,25 @@
   opacity: 1;
   top: 0;
   transform: translate3d(0, -20vmin, 0);
-  animation-name: rise-reflection;
+  /* animation-name: rise-reflection; */
 }
 
 .light {
   height: 0.5vmin;
-  width: 20vmin;
+  width: 50vmin;
   background: white;
   left: 20%;
   right: 0;
   margin: auto;
   top: calc(50% + 1vmin);
-  animation: light 20s infinite;
+  animation: light 20s forwards;
   opacity: 0;
   transform: scaleX(0.1) translate3d(0%, 0, 0);
   border-radius: 0.25vh;
   filter: blur(1px);
-  border: 4px red solid;
+  border: 4px #d86072 double;
 }
 
-@-webkit-keyframes light {
-  5% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-  10% {
-    opacity: 0.6;
-    transform: scaleX(1) translate3d(5%, 0, 0);
-  }
-  15% {
-    opacity: 0.6;
-    transform: scaleX(1) translate3d(-5%, 0, 0);
-  }
-  20% {
-    opacity: 0;
-    transform: scaleX(0.1) translate3d(0, 0, 0);
-  }
-}
 @keyframes light {
   5% {
     opacity: 1;
@@ -425,32 +404,32 @@
 
 .light-2 {
   top: calc(50% + 3vmin);
-  width: 18vmin;
+  width: 38vmin;
   animation-delay: 1s;
 }
 .light-3 {
   top: calc(50% + 4vmin);
-  width: 18vmin;
+  width: 38vmin;
   animation-delay: 1.5s;
 }
 .light-4 {
   top: calc(50% + 5vmin);
-  width: 16vmin;
+  width: 36vmin;
   animation-delay: 2s;
 }
 .light-5 {
   top: calc(50% + 8vmin);
-  width: 14vmin;
+  width: 34vmin;
   animation-delay: 2.5s;
 }
 .light-6 {
   top: calc(50% + 9vmin);
-  width: 10vmin;
+  width: 29vmin;
   animation-delay: 3s;
 }
 .light-7 {
   top: calc(50% + 7vmin);
-  width: 12vmin;
+  width: 32vmin;
   animation-delay: 3.5s;
 }
 
@@ -462,7 +441,7 @@
   border-radius: 50%;
   bottom: 5vmin;
   left: 70%;
-  animation: splash 9s infinite;
+  animation: splash 4s infinite;
   transform: scale(0);
 }
 
