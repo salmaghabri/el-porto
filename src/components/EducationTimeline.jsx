@@ -10,11 +10,11 @@ export default function EducationTimeline() {
   };
 
   return (
-    <div className="flex flex-col items-start w-full max-w-2xl mx-auto">
+    <div className="flex flex-col items-start w-full max-w-2xl mx-auto  mb-9">
       {educationData.slice(0, visibleItems).map((edu, index) => (
         <div key={index} className="relative pb-8">
           <span
-            className="absolute top-0 left-4 -ml-px h-full w-0.5 bg-lime"
+            className="absolute top-0 left-4 -ml-px h-full w-1 bg-lime"
             aria-hidden="true"
           />
           <div className="relative flex items-start space-x-4">
@@ -44,7 +44,9 @@ export default function EducationTimeline() {
       ))}
 
       {visibleItems < educationData.length && (
-        <Button onClick={handleExpand}>More</Button>
+        <div className="mt-4 ">
+          <Button onClick={handleExpand}>More</Button>
+        </div>
       )}
     </div>
   );

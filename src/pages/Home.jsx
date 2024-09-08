@@ -8,7 +8,9 @@ export default function Home() {
         <div className="name font-semibold text-8xl tracking-tighter font-Cinzel text-transparent bg-clip-text bg-gradient-to-r from-lime via-cream to-lime ">
           Salma <span className="font-Vioda text-lime"> * </span>Ghabri
         </div>
-        <p className={`text-lg text-lavender] mt-4`}>
+        <p
+          className={`text-lg  text-transparent bg-clip-text bg-gradient-to-r from-lime via-lavender to-cherry  mt-4`}
+        >
           An engineer (in the making).
         </p>
       </div>
