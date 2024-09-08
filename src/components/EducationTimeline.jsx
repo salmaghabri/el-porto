@@ -14,7 +14,7 @@ export default function EducationTimeline() {
       {educationData.slice(0, visibleItems).map((edu, index) => (
         <div key={index} className="relative pb-8">
           <span
-            className="absolute top-0 left-4 -ml-px h-full w-0.5 bg-lavender"
+            className="absolute top-0 left-4 -ml-px h-full w-0.5 bg-lime"
             aria-hidden="true"
           />
           <div className="relative flex items-start space-x-4">

@@ -128,7 +128,7 @@ export default function About() {
           >
             Skills
           </h1>
-          <div className="flex">
+          <div className="flex pt-12">
             <SkillsContainer />
             <p className=" font-Vioda font-semibold text-xl">
               This is what am familiar with: either studied at uni or used for
