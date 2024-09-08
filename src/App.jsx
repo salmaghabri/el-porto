@@ -1,13 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-
-import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
@@ -20,7 +16,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer />
     </Router>
   );
 }

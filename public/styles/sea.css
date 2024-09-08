@@ -9,12 +9,6 @@
   --cloud: #6578cc;
 }
 
-*,
-*:before,
-*:after {
-  /* animation:none!important; */
-}
-
 .landscape:after,
 .landscape:before,
 .landscape *,

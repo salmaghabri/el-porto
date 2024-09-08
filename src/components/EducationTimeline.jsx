@@ -22,11 +22,18 @@ export default function EducationTimeline() {
               <span className="h-8 w-8 rounded-full bg-lime flex items-center justify-center ring-8 ring-cream" />
             </div>
             <div className="min-w-0 flex-1">
-              <h3 className="text-lg font-medium text-obsidian">{edu.area}</h3>
-              <p className="text-sm text-gray-500">
+              <h3 className="text-lg text-cherry font-Cinzel font-semibold ">
+                {edu.area}
+              </h3>
+              <p className="text-sm text-gray-500 font-Vioda font-semibold">
                 {edu.institution} | {edu.startDate} - {edu.endDate}
               </p>
-              <div className="mt-2 text-sm text-gray-700 flex gap-3 flex-wrap">
+              <p className="text-base font-Vioda font-semibold text-obsidian">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium accusantium aliquam explicabo ipsam perferendis, esse
+                accusamus omnis veritatis exercitationem eos.
+              </p>
+              <div className="mt-2 flex gap-3 flex-wrap ">
                 {edu.highlights.map((highlight, idx) => (
                   <Badge key={idx}>{highlight}</Badge>
                 ))}

@@ -14,11 +14,11 @@ export default function ExperienceAccordion() {
         <div key={index} className=" border-b-2 border-b-lime">
           <button
             onClick={() => toggleAccordion(index)}
-            className="rounded-tr-md rounded-tl-md  w-full flex justify-between items-center p-4 text-obsidian hover:bg-lavender  hover:text-obsidian  focus:outline-none"
+            className=" font-Vioda  rounded-tr-md rounded-tl-md  w-full flex justify-between items-center p-4 text-cherry   focus:outline-none"
           >
             <div className="flex flex-col items-start justify-start">
-              <div className="text-lg font-medium">{experience.role}</div>
-              <div className="text-sm font-Cinzel opacity-55">
+              <div className="text-lg  font-semibold ">{experience.role}</div>
+              <div className="text-sm font-Cinzel text-obsidian opacity-55">
                 @ {experience.company}
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function ExperienceAccordion() {
                 activeIndex === index ? "rotate-[135deg]" : "rotate-0"
               }`}
             >
-              <p className="w-11 h-w-11 text-cream font-Cinzel font-bold">+</p>
+              <p className="text-3xl text-lime font-Cinzel font-bold">+</p>
             </div>
           </button>
           {activeIndex === index && (

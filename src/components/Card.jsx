@@ -44,7 +44,10 @@ const Card = ({
               {description
                 .slice(0, visibleDescriptionCount)
                 .map((highlight, idx) => (
-                  <p key={idx} className="text-gray-700">
+                  <p
+                    key={idx}
+                    className="text-obsidian font-Vioda font-semibold"
+                  >
                     {highlight}
                   </p>
                 ))}

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import skillsData from "../filling/skillsData";
-import "../../public/styles/skills.css";
 
 export const spring = {
   gentle: {
@@ -65,7 +64,7 @@ export default function SkillsContainer() {
             dragConstraints={{ top: 20, left: 25, right: 25, bottom: 20 }}
           >
             <div className="bg-cream relative flex flex-col items-center  w-full h-full border-t-4 border-r-4   border-cherry rounded-full p-3">
-              <h1 className=" font-Vioda text-cherry font-bold  border-1 border-cherry p-1 border-b-cream -mt-[20%] mb-2">
+              <h1 className=" font-Cinzel text-cherry font-bold  border-1 border-cherry p-1 border-b-cream -mt-[20%] mb-2">
                 {label}
               </h1>
               <SkillBubble skills={skills} />

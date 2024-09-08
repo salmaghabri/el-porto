@@ -9,11 +9,13 @@ export default function Badge({ children }) {
       py-2
       px-3
       text-sm
-      font-medium 
+      font-semibold 
       bg-cream 
       text-cherry 
       hover:text-cream
       hover:bg-lime
+      font-Vioda 
+
     "
     >
       {children}

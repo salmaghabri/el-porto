@@ -62,11 +62,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="border border-current rounded-[80%] w-3/4  text-cherry"></div>
-          <div className="text-center">
-            <h1 className="font-light text-sm text-lime ">
-              Website built by Salma with React, Tailwind and framer motion
+          <div className="text-center  font-Vioda font-semibold">
+            <h1 className=" text-lime ">
+              Website built by Salma with React, Tailwind and Framer motion
             </h1>
-            <h1 className="font-light text-sm text-lime opacity-45">
+            <h1 className="font-medium text-lime opacity-45">
               Last update Sept 2024
             </h1>
           </div>

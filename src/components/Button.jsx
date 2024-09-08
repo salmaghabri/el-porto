@@ -18,9 +18,9 @@ export default function Button({ children, onClick }) {
       border-r-4 
       py-2.5 
       px-5 
-    
       text-base 
-      font-medium 
+      font-semibold
+      font-Vioda 
       bg-cream 
       text-obsidian 
       cursor-pointer 
@@ -28,6 +28,7 @@ export default function Button({ children, onClick }) {
       hover:border-2 
       hover:border-r-2 
       hover:border-obsidian
+
     "
       >
         {children}
