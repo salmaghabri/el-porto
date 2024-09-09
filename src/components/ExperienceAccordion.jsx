@@ -9,15 +9,15 @@ export default function ExperienceAccordion() {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto my-10 p-4  ">
+    <div className="w-full max-w-3xl mx-auto my-10 p-4">
       {experiences.map((experience, index) => (
-        <div key={index} className=" border-b-2 border-b-lime">
+        <div key={index} className="border-b-2 border-b-lime">
           <button
             onClick={() => toggleAccordion(index)}
-            className=" font-Vioda  rounded-tr-md rounded-tl-md  w-full flex justify-between items-center p-4 text-cherry   focus:outline-none"
+            className="font-Vioda rounded-tr-md rounded-tl-md w-full flex justify-between items-center p-4 text-cherry focus:outline-none"
           >
             <div className="flex flex-col items-start justify-start">
-              <div className="text-lg  font-semibold ">{experience.role}</div>
+              <div className="text-lg font-semibold">{experience.role}</div>
               <div className="text-sm font-Cinzel text-obsidian opacity-55">
                 @ {experience.company}
               </div>
@@ -31,7 +31,7 @@ export default function ExperienceAccordion() {
             </div>
           </button>
           {activeIndex === index && (
-            <div className="mt-2 p-4   ">
+            <div className="mt-2 p-4">
               <p className="text-sm text-obsidian">
                 <strong>Dates:</strong> {experience.dates}
               </p>

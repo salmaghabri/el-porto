@@ -5,15 +5,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-none right-0  text-cherry p-4 fixed flex justify-end items-end w-full h-16 top-0 z-20`}
+      className={`bg-none right-0 text-cherry p-2 sm:p-4 fixed flex justify-end items-end w-full h-12 sm:h-16 top-0 z-20`}
     >
-      <ul className="flex space-x-4 h-fit w-fit min-w-0 items-end gap-[10px] rounded-br-[20px] rounded-bl-[20px] border-y-[0.075rem] border-lime p-[10px] backdrop-blur-[15px] overflow-visible bg-cream font-Vioda">
+      <ul className="flex space-x-2 sm:space-x-4 h-fit w-fit items-end gap-[5px] sm:gap-[10px] rounded-br-[15px] sm:rounded-br-[20px] rounded-bl-[15px] sm:rounded-bl-[20px] border-y-[0.075rem] border-lime p-[6px] sm:p-[10px] backdrop-blur-[10px] sm:backdrop-blur-[15px] overflow-visible bg-cream font-Cinzel">
         <li>
           <Link
             to="/"
-            className={`${
-              location.pathname === "/" ? "text-lime font-bold" : ""
-            }`}
+            className={`${location.pathname === "/" ? "text-lime " : ""}`}
           >
             Home
           </Link>
@@ -21,9 +19,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/about"
-            className={`${
-              location.pathname === "/about" ? "text-lime font-bold" : ""
-            }`}
+            className={`${location.pathname === "/about" ? "text-lime " : ""}`}
           >
             About
           </Link>
@@ -32,7 +28,7 @@ export default function Navbar() {
           <Link
             to="/projects"
             className={`${
-              location.pathname === "/projects" ? "text-lime font-bold" : ""
+              location.pathname === "/projects" ? "text-lime " : ""
             }`}
           >
             Projects
@@ -42,7 +38,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             className={`${
-              location.pathname === "/contact" ? "text-lime font-bold" : ""
+              location.pathname === "/contact" ? "text-lime " : ""
             }`}
           >
             Contact

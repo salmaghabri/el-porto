@@ -30,6 +30,21 @@ const socialMediaContacts = [
     iconPath: "assets/contacts/spotify.svg",
     link: "https://youtube.com/yourusername",
   },
+  {
+    name: "Spotify",
+    iconPath: "assets/contacts/spotify.svg",
+    link: "https://youtube.com/yourusername",
+  },
+  {
+    name: "Spotify",
+    iconPath: "assets/contacts/spotify.svg",
+    link: "https://youtube.com/yourusername",
+  },
+  {
+    name: "Spotify",
+    iconPath: "assets/contacts/spotify.svg",
+    link: "https://youtube.com/yourusername",
+  },
 ];
 
 export default socialMediaContacts;

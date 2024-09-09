@@ -31,7 +31,7 @@ const SkillBubble = ({ skills }) => (
     {skills.map((skill, index) => (
       <motion.img
         key={index}
-        className="bubble w-10 h-16 flex items-center justify-center rounded-full  mx-2 mb-2 z-30 object-contain scale-110"
+        className="bubble w-6 h-6 sm:w-6 sm:h-10 md:w-8 md:h-12 lg:w-10 lg:h-16 flex items-center justify-center rounded-full mx-2 mb-2 z-30 object-contain"
         variants={bubbleVariants}
         initial="initial"
         animate="animate"
@@ -47,13 +47,13 @@ const SkillBubble = ({ skills }) => (
 
 export default function SkillsContainer() {
   return (
-    <div className="relative w-full h-screen flex flex-wrap justify-center ">
+    <div className="relative w-full min-h-screen flex flex-wrap justify-center gap-8 py-8">
       {Object.keys(skillsData).map((key, index) => {
         const { label, skills } = skillsData[key];
         return (
           <motion.div
             key={key}
-            className="relative flex flex-col items-center w-60 h-60"
+            className="relative flex flex-col items-center w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60"
             transition={{
               type: "spring",
               stiffness: 20,
@@ -63,8 +63,8 @@ export default function SkillsContainer() {
             drag
             dragConstraints={{ top: 20, left: 25, right: 25, bottom: 20 }}
           >
-            <div className="bg-cream relative flex flex-col items-center  w-full h-full border-t-4 border-r-4   border-cherry rounded-full p-3">
-              <h1 className=" font-Cinzel text-cherry font-bold  border-1 border-cherry p-1 border-b-cream -mt-[20%] mb-2">
+            <div className="bg-cream relative flex flex-col items-center w-full h-full border-t-4 border-r-4 border-cherry rounded-full p-3">
+              <h1 className="font-Cinzel text-cherry font-bold text-xs sm:text-sm md:text-lg border-1 border-cherry p-1 border-b-cream   lg:-mt-[20%] md:-mt-[18%]  mb-2">
                 {label}
               </h1>
               <SkillBubble skills={skills} />
