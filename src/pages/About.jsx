@@ -114,13 +114,12 @@ export default function About() {
               has been shaped by diverse experiences, from building full-stack
               web applications to conducting research in computer vision. I
               thrive in challenging environments that require creative thinking
-              and adaptability. Whether it's mastering new{" "}
-              <span className="animated-link">technologies </span>or working
-              within dynamic teams, I'm committed to continuous learning and
-              delivering impactful solutions.
+              and adaptability. Whether it's mastering new technologies or
+              working within dynamic teams, I'm committed to continuous learning
+              and delivering impactful solutions.
             </p>
             <div
-              className="border-4 rounded-tl-full rounded-tr-full border-lavender w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] bg-cover"
+              className="border-4 rounded-tl-full rounded-tr-full self-end sm:self-auto border-lavender w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] bg-cover"
               style={{ backgroundImage: `url(assets/eni.jpg)` }}
             ></div>
           </div>
