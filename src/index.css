@@ -92,3 +92,20 @@ body {
     @apply w-full;
   }
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cherry rounded-md;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-track:hover {
+  @apply bg-lavender;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-lime;
+}

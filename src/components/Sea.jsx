@@ -26,6 +26,7 @@ const Sea = () => {
       <div className="water"></div>
       <div className="splash"></div>
       <div className="splash delay-1"></div>
+      <div className="splash delay-1"></div>
       <div className="splash delay-2"></div>
       <div className="splash splash-4 delay-2"></div>
       <div className="splash splash-4 delay-3"></div>
@@ -41,8 +42,6 @@ const Sea = () => {
         <div className="grass"></div>
         <div className="grass grass-1"></div>
         <div className="grass grass-2"></div>
-        <div className="reed"></div>
-        <div className="reed reed-1"></div>
       </div>
     </div>
   );
