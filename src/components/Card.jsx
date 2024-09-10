@@ -106,6 +106,17 @@ const Card = ({
                   </a>
                 </Badge>
               )}
+              {links.garden && (
+                <Badge>
+                  <a
+                    href={links.garden}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="w-[24px] h-[24px] "> 🌱 </div>
+                  </a>
+                </Badge>
+              )}
             </div>
           </div>
         </div>

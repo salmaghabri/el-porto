@@ -10,6 +10,7 @@ export const projects = [
     links: {
       github: "https://github.com/username/car-sales-analysis",
       kaggle: "https://www.kaggle.com/username/car-sales-analysis",
+      garden: "https://www.kaggle.com/username/car-sales-analysis",
     },
   },
   {
@@ -23,6 +24,7 @@ export const projects = [
     links: {
       github: "https://github.com/username/car-sales-analysis",
       kaggle: "https://www.kaggle.com/username/car-sales-analysis",
+      garden: "https://www.kaggle.com/username/car-sales-analysis",
       googleDrive: "https://drive.google.com/drive/folders/your-folder-id",
     },
   },
@@ -35,6 +37,7 @@ export const projects = [
     links: {
       github: "https://github.com/username/car-sales-analysis",
       kaggle: "https://www.kaggle.com/username/car-sales-analysis",
+      garden: "https://www.kaggle.com/username/car-sales-analysis",
     },
   },
   {
@@ -48,6 +51,7 @@ export const projects = [
     links: {
       github: "https://github.com/username/car-sales-analysis",
       kaggle: "https://www.kaggle.com/username/car-sales-analysis",
+      garden: "https://www.kaggle.com/username/car-sales-analysis",
     },
   },
 ];
