@@ -5,7 +5,9 @@ const experiences = [
     dates: "July 2024 – Sept 2024",
     location: "Remote",
     description: [
-      "Adapted the pose estimation model, Alphapose, to utilize YOLOv9 as the object detection backbone instead of its current implementation with YOLOv3.",
+      "Adapted the AlphaPose framework to replace its YOLOv3 detector with a pretrained YOLOv9 model optimized for tennis player detection. ",
+      "Implemented two integration methods—parallel detection file processing and direct detector replacement—while optimizing the framework's multithreaded pipeline ",
+      "Documented methodologies, development process, and findings for internal reports.",
     ],
   },
   {
@@ -27,7 +29,7 @@ const experiences = [
       "Conducted an extensive literature review on deep learning techniques for change detection in multispectral satellite images.",
       "Enhanced a deep learning model to detect changes in multispectral satellite images over time.",
       "Improved the model's F1 score through feature engineering and dimensionality reduction techniques, focusing on significant alterations in geographical features and land use patterns.",
-      "Achieved a score of 90% (18/20) for this project.",
+      "Achieved a score of 90% for this project.",
     ],
   },
   {
@@ -49,6 +51,7 @@ const experiences = [
     description: [
       "Selected to participate in an internship program at the Japanese company Dots for Inc.",
       "Worked on the front end of a streaming web application.",
+      "Presented the work of the internship in an online webinair",
     ],
   },
 ];

@@ -9,6 +9,7 @@ const Card = ({
   name,
   description,
   tools,
+  image,
   links,
   progress,
   range,
@@ -28,7 +29,7 @@ const Card = ({
   return (
     <div className="h-screen flex items-center justify-center sticky top-0">
       <motion.div
-        className="relative flex flex-col p-6 sm:p-8 bg-cream shadow-lg rounded-lg w-full  h-3/4 sm:w-3/4 sm:h-3/4 ring-4 ring-cherry"
+        className="relative flex flex-col p-6 sm:p-8 bg-cream shadow-lg rounded-lg w-full h-3/4 sm:w-3/4 sm:h-3/4 ring-4 ring-cherry"
         style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
       >
         <div className="flex flex-col h-full ">
@@ -37,23 +38,33 @@ const Card = ({
               {name}
               <Line color={"cherry"} width={"1/3"} />
             </div>
+            <div className="flex flex-col sm:flex-row  h-full">
+              <div className=" w-full space-y-1 sm:space-y-2 overflow-y-auto max-h-[80%] ">
+                {description
+                  .slice(0, visibleDescriptionCount)
+                  .map((highlight, idx) => (
+                    <p
+                      key={idx}
+                      className="text-sm sm:text-base text-obsidian font-Vioda font-semibold"
+                    >
+                      {highlight}
+                    </p>
+                  ))}
+                <span className="inline-block">
+                  {visibleDescriptionCount < description.length && (
+                    <Button onClick={handleShowMore}>Tell me more</Button>
+                  )}
+                </span>
+              </div>
 
-            <div className="space-y-1 sm:space-y-2 flex-grow overflow-y-auto max-h-[80%] ">
-              {description
-                .slice(0, visibleDescriptionCount)
-                .map((highlight, idx) => (
-                  <p
-                    key={idx}
-                    className="text-sm sm:text-base text-obsidian font-Vioda font-semibold"
-                  >
-                    {highlight}
-                  </p>
-                ))}
-              <span className="inline-block">
-                {visibleDescriptionCount < description.length && (
-                  <Button onClick={handleShowMore}>Tell me more</Button>
-                )}
-              </span>
+              <div
+                className=" md:w-1/2 md:h-full "
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              ></div>
             </div>
 
             <div className="line-wrapper mt-auto mb-4 sm:mb-6  ">

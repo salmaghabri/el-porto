@@ -16,10 +16,12 @@ export default function Button({ children, onClick }) {
       border
       border-b-[6px]
       border-r-4 
-      py-2.5 
-      px-5 
-      text-base 
-      font-semibold
+      py-1
+      px-3
+      sm:py-2.5 
+      sm:px-5 
+      sm:text-base 
+      sm:font-semibold
       font-Vioda 
       bg-cream 
       text-obsidian 
