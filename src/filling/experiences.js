@@ -5,9 +5,11 @@ const experiences = [
     dates: "July 2024 – Sept 2024",
     location: "Remote",
     description: [
-      "Adapted the AlphaPose framework to replace its YOLOv3 detector with a pretrained YOLOv9 model optimized for tennis player detection. ",
-      "Implemented two integration methods—parallel detection file processing and direct detector replacement—while optimizing the framework's multithreaded pipeline ",
-      "Documented methodologies, development process, and findings for internal reports.",
+      "Integrated YOLOv9 into AlphaPose to replace YOLOv3, optimizing the pose estimation framework for tennis match analysis.",
+      "Conducted a quantitative evaluation, comparing YOLOv9 and YOLOv3 using metrics like IoU and mAP, demonstrating superior performance of YOLOv9 for tennis player detection.",
+      "Experimented with two methods: detection file-based processing and direct YOLOv9 integration. ",
+      "Enhanced multithreaded pipeline to improve parallel processing between detection and pose estimation stages.",
+      "Documented methodologies, development process, and findings",
     ],
   },
   {
@@ -18,6 +20,7 @@ const experiences = [
     description: [
       "Worked in various projects and translated design mock-ups and wireframes into responsive user interfaces mainly with React.",
       "Developed backend services using Node.js and integrated with Azure cloud services.",
+      "Documented methodologies and development process",
     ],
   },
   {
@@ -39,7 +42,7 @@ const experiences = [
     location: "Tunis",
     description: [
       "Implemented a career assessment and tracking platform for the esteemed organization from concept to completion.",
-      "Utilized Spring Boot for the backend and Angular for the frontend, working on both ends of the application.",
+      "Utilized Spring Boot for the backend, Angular for the frontend and Postgres for data persistence.",
       "Containerized the website using Docker.",
     ],
   },
@@ -49,9 +52,9 @@ const experiences = [
     dates: "Jan 2023 – Feb 2023",
     location: "Tunis",
     description: [
-      "Selected to participate in an internship program at the Japanese company Dots for Inc.",
+      "Selected to participate in the METI internship program at the Japanese company Dots for Inc.",
       "Worked on the front end of a streaming web application.",
-      "Presented the work of the internship in an online webinair",
+      "Showcased internship achievements in a professional online webinar presentation.",
     ],
   },
 ];

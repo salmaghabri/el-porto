@@ -89,7 +89,7 @@ export const projects = [
   {
     name: "DB Synchronisation Application",
     description: [
-      "This project was part of Distributed Systems course where we were asked to develop application for synchronizing sales data between a Head Office (HO) and two Branch Offices (BOs) (analogous to functionalities provided by Talend)",
+      "This project was part of Distributed Systems course where we were asked to develop application for synchronizing sales data between a Head Office (HO) and two Branch Offices (BOs) (similar to functionalities provided by Talend)",
       " The applciation  Supports CRUD operations for managing product information. It utilizes RabbitMQ message queues to to handle real-time messaging and updates and Tkinter for the GUI ",
       " This app implements message persistence and queue durability to handle system failures and ensure data integrity. ",
     ],
