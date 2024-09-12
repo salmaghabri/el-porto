@@ -45,9 +45,9 @@ export default function About() {
       >
         <section className="border-b-4 border-r-4 mt-10 sm:mt-20 border-cherry flex flex-col">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl text-cherry font-Cinzel w-full sm:w-2/3 lg:w-1/3 mt-4 sm:mt-8">
-            I graduated college and all I got is
+            I'm about to graduate college and I'm looking for an internship
           </h1>
-          <div className="relative w-full">
+          {/* <div className="relative w-full">
             <svg
               className="w-full"
               viewBox="0 0 620 90"
@@ -100,7 +100,7 @@ export default function About() {
                 ))}
               </text>
             </svg>
-          </div>
+          </div> */}
         </section>
 
         <section className="border-b-4 border-l-4 border-cherry">
@@ -119,7 +119,7 @@ export default function About() {
               and delivering impactful solutions.
             </p>
             <div
-              className="border-4 rounded-tl-full rounded-tr-full self-end sm:self-auto border-lavender w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] bg-cover"
+              className=" rounded-tl-full rounded-tr-full self-end sm:self-auto  w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] bg-cover"
               style={{ backgroundImage: `url(assets/eni.jpg)` }}
             ></div>
           </div>

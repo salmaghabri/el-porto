@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: "YOLOv9 Integration",
+    name: "YOLOv9 Alphapose Integration",
     description: [
       "Adapted the AlphaPose framework to replace its YOLOv3 detector with a pretrained YOLOv9 model optimized for tennis player detection.  ",
       "Implemented two integration methods—parallel detection file processing and direct detector replacement—while optimizing the framework's multithreaded pipeline ",
@@ -10,34 +10,32 @@ export const projects = [
     image: "assets/projects/tennis.png",
     tools: [" OpenCV", " Pytorch"],
     links: {
-      garden: "https://www.kaggle.com/username/car-sales-analysis",
+      garden:
+        "https://salmaghabri.github.io/PFA-wiki/Object-Detection-and-Pose-Ectimation/",
     },
   },
   {
-    name: "Change Detection",
+    name: "Deep Learning for Change Detection in Satelite Images",
     description: [
-      "Conducted an extensive literature review on deep learning techniques for change detection in multispectral satellite images.",
-      "Enhanced a deep learning model to detect changes in multispectral satellite images over time.",
-      "Improved the model's F1 score through feature engineering and dimensionality reduction techniques, focusing on significant alterations in geographical features and land use patterns.",
-      "Achieved a score of 90% for this project.",
+      "During my fourth year as a software engineering student, I worked on an end-of-year project to enhance a deep learning model for detecting changes in multispectral satellite images over time. The project spanned the entire second semester, and we built upon the foundational work of the reference paper 'A Deep Learning Model for Change Detection on Satellite Images' As part of this project, we conducted a comprehensive literature review on remote sensing indices and semantic segmentation in satellite imagery. By leveraging remote sensing indices for feature engineering and band selection, along with  and dimensionality reduction techniques, we improved the model’s F1 score and global accuracy",
+      " This marked my first exploration into the interesting intersection of remote sensing and machine learning",
     ],
     image: "assets/projects/fresunet.png",
     tools: ["Pandas", " Numpy", " Pytorch"],
     links: {
-      github: "https://github.com/username/car-sales-analysis",
-      kaggle: "https://www.kaggle.com/username/car-sales-analysis",
-      garden: "https://www.kaggle.com/username/car-sales-analysis",
+      kaggle: "https://www.kaggle.com/code/salmaghabri/pffa-change-detection",
+      garden: "https://salmaghabri.github.io/PFA-wiki/Change-Detection/",
+      read: "https://drive.google.com/file/d/1aJf0fKntRCBw5QlkbHJ0QZCTs57Eyi8p/view?usp=sharing",
     },
   },
   {
     name: "Big Data Weather Pipeline",
     description: [
-      "Designed and implemented a Lambda architecture to perform batch processing and streaming processing by simulating a stream using a weather dataset, and handled the visualization layer.",
-      "Designed and implemented a Lambda architecture to perform batch processing and streaming processing by simulating a stream using a weather dataset, and handled the visualization layer.",
-      "Designed and implemented a Lambda architecture to perform batch processing and streaming processing by simulating a stream using a weather dataset, and handled the visualization layer.",
+      "This project was part of Big Data course where we were asked to design and implement a simplified, end-to-end big data pipeline for batch and streaming processing. ",
+      "We based our solution on the Lambda architecture, simulating a data stream from a CSV file containing weather data. The CSV file represented both the data at rest and the stream of incoming data. For batch processing, we computed the average temperature for each capital, while the streaming component extracted the maximum average temperature in real-time for each capital. The data was stored in a NoSQL database and later visualized in real-time through a web application.",
     ],
     image: "assets/projects/ta9sn.png",
-    tools: ["  Hadoop", " Spark", " Kafka", " MongoDB", " Express", " React"],
+    tools: ["  Hadoop", " Spark", " MongoDB", " Express", " React"],
     links: {
       github: "https://github.com/username/car-sales-analysis",
       kaggle: "https://www.kaggle.com/username/car-sales-analysis",
@@ -48,15 +46,14 @@ export const projects = [
   {
     name: "Second-hand Car Sales Analysis and Price Prediction",
     description: [
-      "Scraped and collected data from various second-hand car sales websites.",
-      "Conducted in-depth data analysis and visualization to identify market trends and patterns.",
-      "Trained a machine learning model to predict car prices based on the collected data.",
+      "The workflow of this project mirrors the key phases of the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework. We started by scraping data from various second-hand car sales websites. The core part of this project was data cleaning and preprocessing, which is crucial the next steps. We then conducted an in-depth data analysis and visualization to identify market trends. Next, we trained and evaluated a machine learning model to predict car prices based on the cleaned data. We finally wrapped everything in PyQt app to allow users to input car attributes and receive price predictions, making the model usable in real-world scenarios.",
     ],
     image: "assets/projects/tayara.png",
     tools: ["Beautiful Soup", "Selenium", "Scikit-learn", "Pandas", "Seaborn"],
     links: {
-      github: "https://github.com/username/car-sales-analysis",
-      kaggle: "https://www.kaggle.com/username/car-sales-analysis",
+      github:
+        "https://github.com/MohamedAzizBellaaj/Data-Analysis-of-Second-hand-Car-Dealerships",
+      read: "https://drive.google.com/file/d/1D3B7-xU2wu8xKfXIikLAXM83uHFRi2E0/view?usp=sharing",
     },
   },
 
@@ -74,27 +71,25 @@ export const projects = [
     },
   },
   {
-    name: "DB Synchronisation Application",
+    name: "Wikilinks To md toggler Obsidian Plugin",
     description: [
-      "This project was part of Distributed Systems course where we were asked to develop application for synchronizing sales data between a Head Office (HO) and two Branch Offices (BOs) (analogous to functionalities provided by Talend)",
-      " The applciation  Supports CRUD operations for managing product information. It utilizes RabbitMQ message queues to to handle real-time messaging and updates and Tkinter for the GUI ",
-      " This app implements message persistence and queue durability to handle system failures and ensure data integrity. ",
+      " An Obsidian plugin that toggles highlighted text between wikilink and markdown formats.",
+      "I love Obsidian (a lot) and I found myself searching for a plugin with this functionality, but came up empty-handed. So, I figured it was the perfect chance to build it myself and contribute something useful to the Obsidian community",
     ],
-    image: "assets/projects/rabbit.png",
-    tools: ["RabbitMQ", " Tkinter", "MySQL"],
+    image: "assets/projects/wikilinks.png",
+    tools: ["Typescript"],
     links: {
-      github: "https://github.com/salmaghabri/DB-Synchronisation",
+      github: "https://github.com/salmaghabri/toggle-wikilinks-to-md",
     },
   },
   {
-    name: "DB Synchronisation Application",
+    name: "This website",
     description: [
-      "This project was part of Distributed Systems course where we were asked to develop application for synchronizing sales data between a Head Office (HO) and two Branch Offices (BOs) (similar to functionalities provided by Talend)",
-      " The applciation  Supports CRUD operations for managing product information. It utilizes RabbitMQ message queues to to handle real-time messaging and updates and Tkinter for the GUI ",
-      " This app implements message persistence and queue durability to handle system failures and ensure data integrity. ",
+      "A portfolio website where I can say everything I can’t fit into a CV (and freely yap)",
+      " aaaaand creating a website where I make the rules (that explains the design quirks and the offbeat typography) doesn't happen very often.",
     ],
-    image: "assets/projects/rabbit.png",
-    tools: ["RabbitMQ", " Tkinter", "MySQL"],
+    image: "assets/projects/porto.png",
+    tools: ["React", " TailwindCSS", "Framer Motion"],
     links: {
       github: "https://github.com/salmaghabri/DB-Synchronisation",
     },

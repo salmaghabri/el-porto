@@ -1,6 +1,7 @@
-export default function Badge({ children }) {
+export default function Badge({ children, tooltip }) {
   return (
     <button
+      title={tooltip ? "Read report" : undefined}
       className="
       rounded-lg
       border-2

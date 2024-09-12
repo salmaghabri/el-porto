@@ -124,3 +124,12 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+/* tooltip */
+.tooltip {
+  display: none;
+}
+
+.relative:hover .tooltip {
+  display: block;
+}

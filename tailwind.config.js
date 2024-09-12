@@ -41,14 +41,7 @@ export default {
         blobRose: "textBlobRose 8s infinite linear",
         blobMauve: "textBlobMauve 12s infinite ease-in-out",
       },
-      backgroundImage: {
-        blobGreen:
-          "linear-gradient(120deg, #7fcee4 0%, #ff8cf3 50%, #b45ceb 100%)",
-        blobRose:
-          "linear-gradient(120deg, #ff8cf3 0%, #7fcee4 50%, #b45ceb 100%)",
-        blobMauve:
-          "linear-gradient(120deg, #b45ceb 0%, #ff8cf3 50%, #7fcee4 100%)",
-      },
+
       backgroundClip: {
         text: "text",
       },

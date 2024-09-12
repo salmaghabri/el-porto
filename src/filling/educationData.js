@@ -49,7 +49,7 @@ const educationData = [
       " German",
       " Biology",
       " Pascal",
-      " Insomnea",
+      " Insomnia",
     ],
   },
   {
@@ -59,7 +59,13 @@ const educationData = [
     endDate: "2016-06",
     description:
       "Where I dicovered the untamed, never-ending irrational numbers. Square root of 2, you are wild. ",
-    highlights: ["Calculus", " History", " Geography", "Biology"],
+    highlights: [
+      "Mathematics",
+      "geometry",
+      " History",
+      " Geography",
+      "Biology",
+    ],
   },
   // {
   //   institution: "National Institute of Applied Science and Technology",

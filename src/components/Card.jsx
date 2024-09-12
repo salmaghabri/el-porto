@@ -129,6 +129,17 @@ const Card = ({
                   </a>
                 </Badge>
               )}
+              {links.read && (
+                <Badge tooltip={"read more"}>
+                  <a
+                    href={links.read}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="w-[24px] h-[24px] "> 🔍 </div>
+                  </a>
+                </Badge>
+              )}
             </div>
           </div>
         </div>

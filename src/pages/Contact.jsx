@@ -27,7 +27,7 @@ export default function Contact() {
     window.location.href = mailtoLink;
   };
 
-  const [visibleContacts, setVisibleContacts] = useState(3);
+  const [visibleContacts, setVisibleContacts] = useState(4);
 
   const showMoreContacts = () => {
     setVisibleContacts((prev) => prev + 3);
@@ -39,23 +39,23 @@ export default function Contact() {
         <div className="flex flex-col justify-between  ">
           <div className="pls w-full px-6  h-3/5 border-2 text-cherry border-cherry">
             <h3 className=" sm:text-xl lg:text-[1.85rem] inline-block -mt-[18rem] pt-20 font-medium bg-cream text-cherry font-Cinzel animate-fadeIn ">
-              Thank you for stopping by
+              Thank you for stopping by!
             </h3>
-            <h3 className="text-lg mb-4 font-Vioda font-medium">
+            <h3 className=" mt-4 text-obsidian text-xl mb-4 font-Vioda font-medium">
               Got any questions? Or maybe just want to say hi? Feel free to drop
               a message
             </h3>
-            <h3 className="text-lg mb-4 font-Vioda font-medium">
-              (I understand English, French, Arabic, or German )
+            <h3 className="text-obsidian text-xl mb-4 font-Vioda font-medium">
+              (Did I mention that I understand English, French, Arabic, and a
+              bit of German )
             </h3>
           </div>
           <div className="socials w-full px-6  h-2/5 border-2 text-cherry border-cherry">
             <h3 className=" sm:text-xl lg:text-3xl inline-block sm:-mt-[10rem] -mt-[8rem] font-medium bg-cream text-cherry font-Cinzel animate-fadeIn ">
               You can find me across these platforms
             </h3>
-            <p>not a big fan of social media, but whatever hh </p>
 
-            <div className="flex items-center gap-4 flex-wrap pb-1">
+            <div className="flex items-center gap-4 flex-wrap pb-1 mt-8">
               {socialMediaContacts
                 .slice(0, visibleContacts)
                 .map((contact, index) => (
@@ -68,7 +68,7 @@ export default function Contact() {
                       <img
                         src={contact.iconPath}
                         alt={`${contact.name} icon`}
-                        className="w-6 h-6"
+                        className="w-8 h-8"
                       />
                     </a>
                   </Badge>
@@ -77,6 +77,9 @@ export default function Contact() {
                 <Button onClick={showMoreContacts}>+</Button>
               )}
             </div>
+            <p className="text-obsidian font-light text-sm">
+              not a big fan of social media (as you can probably tell)
+            </p>
           </div>
         </div>
 
@@ -96,7 +99,7 @@ export default function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-3 py-2 focus:outline-none font-Vioda  font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda"
+                className="w-full px-3 py-2 focus:outline-none font-Vioda  font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda  "
                 rows="6"
                 placeholder="I'm writing to remind you to touch grass"
                 required
@@ -110,7 +113,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-1/2 px-3 py-2 focus:outline-none font-Vioda font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda"
+                className="w-1/2 px-3 py-2 focus:outline-none font-Vioda font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda "
                 placeholder="Sign with email"
                 required
               />
