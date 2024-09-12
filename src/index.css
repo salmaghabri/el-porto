@@ -80,7 +80,7 @@ body {
 /* links */
 @layer components {
   .animated-link {
-    @apply relative text-cherry font-medium transition-colors duration-300 ease-in-out cursor-pointer;
+    @apply relative text-cherry font-semibold transition-colors duration-300 ease-in-out cursor-pointer;
   }
 
   .animated-link::before {

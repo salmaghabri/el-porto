@@ -26,12 +26,24 @@ export default function EducationTimeline() {
                 {edu.area}
               </h3>
               <p className="text-xs sm:text-sm text-gray-500 font-Vioda font-semibold">
-                {edu.institution} | {edu.startDate} - {edu.endDate}
+                {edu.link ? (
+                  <span className="animated-link">
+                    <a
+                      href={edu.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {edu.institution}
+                    </a>
+                  </span>
+                ) : (
+                  <span>{edu.institution}</span>
+                )}{" "}
+                | {edu.startDate} - {edu.endDate}
               </p>
+
               <p className="text-sm sm:text-base font-Vioda font-semibold text-obsidian">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium accusantium aliquam explicabo ipsam perferendis, esse
-                accusamus omnis veritatis exercitationem eos.
+                {edu.description}
               </p>
               <div className="mt-2 flex gap-2 sm:gap-3 flex-wrap ">
                 {edu.highlights.map((highlight, idx) => (
