@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import PdfViewer from "./components/PdfViewer";
 function App() {
   return (
     <Router>

@@ -1,14 +1,14 @@
-const PdfViewer = () => {
+export default function PdfViewer() {
   return (
     <div>
       <iframe
-        // src={`${process.env.PUBLIC_URL}/ile.pdf`}
+        src={`/${"Salma-Ghabri-Resume.pdf"}`}
         width="100%"
         height="600px"
         title="PDF Viewer"
       ></iframe>
     </div>
   );
-};
+}
 
-export default PdfViewer;
+PdfViewer;

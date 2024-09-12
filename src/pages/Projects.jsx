@@ -17,7 +17,7 @@ export default function Projects() {
         className="relative px-6 mt-4 lg:px-16 lg:pt-12 md:px-8 md:pt-4 sm:px-4 pb-16 sm:pt-6"
       >
         {projects.map((project, i) => {
-          const targetScale = 1.12 - (projects.length - i) * 0.05;
+          const targetScale = 1.154465 - (projects.length - i) * 0.05;
           return (
             <Card
               key={`p_${i}`}
