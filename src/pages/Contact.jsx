@@ -22,8 +22,9 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:salmaghabri@gmail.com?subject=Contact Form Submission^^`;
+    const mailtoLink = `mailto:salmaghabri@gmail.com?subject=Contact Form Submission&body=${formData.message}`;
 
+    window.location.href = mailtoLink;
     window.location.href = mailtoLink;
   };
 

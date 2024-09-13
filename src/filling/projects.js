@@ -37,9 +37,7 @@ export const projects = [
     image: "assets/projects/ta9sn.png",
     tools: ["  Hadoop", " Spark", " MongoDB", " Express", " React"],
     links: {
-      github: "https://github.com/username/car-sales-analysis",
-      kaggle: "https://www.kaggle.com/username/car-sales-analysis",
-      garden: "https://www.kaggle.com/username/car-sales-analysis",
+      github: "https://github.com/louaybadri/WeatherBigData",
     },
   },
 
@@ -92,7 +90,7 @@ export const projects = [
     image: "assets/projects/porto.png",
     tools: ["React", " TailwindCSS", "Framer Motion"],
     links: {
-      github: "https://github.com/salmaghabri/DB-Synchronisation",
+      github: "https://github.com/salmaghabri/el-porto-del-farina",
     },
   },
 ];
