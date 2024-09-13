@@ -30,6 +30,7 @@ const SkillBubble = ({ skills }) => (
   <div className="relative w-full h-full flex flex-wrap justify-center items-center">
     {skills.map((skill, index) => (
       <motion.img
+        title={skill}
         key={index}
         className="bubble w-6 h-6 sm:w-6 sm:h-10 md:w-8 md:h-12 lg:w-10 lg:h-16 flex items-center justify-center rounded-full mx-2 mb-2 z-30 object-contain"
         variants={bubbleVariants}
@@ -63,8 +64,8 @@ export default function SkillsContainer() {
             drag
             dragConstraints={{ top: 20, left: 25, right: 25, bottom: 20 }}
           >
-            <div className="bg-cream relative flex flex-col items-center w-full h-full border-t-4 border-r-4 border-cherry rounded-full p-3">
-              <h1 className="font-Cinzel text-cherry font-bold text-xs sm:text-sm md:text-lg border-1 border-cherry p-1 border-b-cream   lg:-mt-[20%] md:-mt-[18%]  mb-2">
+            <div className="bg-cream relative flex flex-col-reverse md:flex-col items-center w-full h-full border-t-4 border-r-4 border-cherry rounded-full p-3">
+              <h1 className="font-Cinzel text-cherry font-bold text-[.7rem] sm:text-sm md:text-lg border-1 border-cherry p-1 border-b-cream   lg:-mt-[20%] md:-mt-[18%]  mb-2">
                 {label}
               </h1>
               <SkillBubble skills={skills} />

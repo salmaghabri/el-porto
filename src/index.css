@@ -6,6 +6,7 @@
 body {
   margin: 0;
   background-color: #fff6ee;
+  scroll-behavior: smooth;
 }
 .form {
   width: 100%;
@@ -119,9 +120,11 @@ body {
 
 .custom-list-item::before {
   content: "*";
+  color: #d6dc82;
   position: absolute;
   left: 0;
   font-size: 1.2rem;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -132,4 +135,61 @@ body {
 
 .relative:hover .tooltip {
   display: block;
+}
+/* custom tooltip*/
+/* Tooltip container */
+.custom-tooltip {
+  position: relative; /* This allows the tooltip to be positioned relative to the button */
+  display: inline-block; /* Ensures the button does not occupy the entire width */
+}
+
+/* Tooltip text */
+.custom-tooltip::before {
+  content: attr(
+    data-tooltip
+  ); /* Use the content of the data-tooltip attribute */
+  position: absolute;
+  bottom: 125%; /* Position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Background color of the tooltip */
+  color: #fff; /* Text color of the tooltip */
+  padding: 5px 10px; /* Padding inside the tooltip */
+  border-radius: 4px; /* Rounded corners */
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Hide tooltip by default */
+  visibility: hidden; /* Hide tooltip by default */
+  transition: opacity 0.3s; /* Fade-in effect */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Show the tooltip on hover */
+.custom-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #00ff00;
+  color: #111;
+  font-size: 150%;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: -1.6em;
+  left: 100%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  border: 1px solid #111111;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  position: relative;
 }

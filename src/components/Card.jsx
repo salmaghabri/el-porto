@@ -1,6 +1,5 @@
 import { motion, useTransform } from "framer-motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import Badge from "./Badge";
 import Button from "./Button";
@@ -40,7 +39,7 @@ const Card = ({
               <Line color={"cherry"} width={"1/3"} />
             </div>
             <div className="flex flex-col sm:flex-row  h-full">
-              <div className=" w-full space-y-1 sm:space-y-2 overflow-y-auto max-h-[80%] ">
+              <div className=" w-full space-y-1 sm:space-y-2 overflow-y-auto    max-h-[80%] ">
                 {description
                   .slice(0, visibleDescriptionCount)
                   .map((highlight, idx) => (
@@ -58,17 +57,18 @@ const Card = ({
                 </span>
               </div>
 
-              <div
-                className=" md:w-1/2 md:h-full "
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              ></div>
+              <img
+                className="  hidden  md:block md:w-1/2 md:h-4/5 max-h-[300px] object-fill "
+                src={image}
+                // style={{
+                //   backgroundImage: `url(${image})`,
+                //   backgroundPosition: "center",
+                //   backgroundSize: "cover",
+                // }}
+              />
             </div>
 
-            <div className="line-wrapper mt-auto mb-4 sm:mb-6  ">
+            <div className="line-wrapper mt-auto mb-4 hidden xs:block sm:mb-6  ">
               <Line color={"lime"} width={"3/4"} />
             </div>
           </div>

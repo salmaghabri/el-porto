@@ -2,7 +2,9 @@ export default function Badge({ children, tooltip }) {
   return (
     <button
       title={tooltip ? "Read report" : undefined}
+      // data-title={tooltip ? "Read report" : ""}
       className="
+      //custom-tooltip
       rounded-lg
       border-2
       border-solid 

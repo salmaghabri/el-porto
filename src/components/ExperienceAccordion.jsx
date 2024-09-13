@@ -33,7 +33,7 @@ export default function ExperienceAccordion() {
           >
             <div className="flex flex-col items-start justify-start">
               <div className="text-lg font-semibold">{experience.role}</div>
-              <div className="text-sm font-Cinzel text-obsidian opacity-55">
+              <div className="text-sm font-Cinzel text-lavender font-medium">
                 @ {experience.company}
               </div>
             </div>

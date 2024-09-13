@@ -45,7 +45,8 @@ export default function About() {
       >
         <section className="border-b-4 border-r-4 mt-10 sm:mt-20 border-cherry flex flex-col">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl text-cherry font-Cinzel w-full sm:w-2/3 lg:w-1/3 mt-4 sm:mt-8">
-            I'm about to graduate college and I'm looking for an internship
+            I'm about to graduate college and I'm looking for an internship, in
+            financae , trust funds, six five ,blue eyes
           </h1>
           {/* <div className="relative w-full">
             <svg
@@ -129,7 +130,7 @@ export default function About() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl -mt-[4%] sm:-mt-[6%] ml-auto sm:ml-[80%] text-cherry font-Cinzel bg-cream animate-fadeIn inline-block">
             Skills
           </h1>
-          <div className="flex flex-col sm:flex-row pt-6 sm:pt-12">
+          <div className="flex flex-col-reverse sm:flex-row pt-6 sm:pt-12">
             <SkillsContainer />
             <p className="font-Vioda font-semibold text-lg sm:text-xl">
               This is what I am familiar with: either studied at uni or used for

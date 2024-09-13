@@ -46,10 +46,11 @@ export const projects = [
   {
     name: "Second-hand Car Sales Analysis and Price Prediction",
     description: [
-      "The workflow of this project mirrors the key phases of the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework. We started by scraping data from various second-hand car sales websites. The core part of this project was data cleaning and preprocessing, which is crucial the next steps. We then conducted an in-depth data analysis and visualization to identify market trends. Next, we trained and evaluated a machine learning model to predict car prices based on the cleaned data. We finally wrapped everything in PyQt app to allow users to input car attributes and receive price predictions, making the model usable in real-world scenarios.",
+      "The workflow of this project mirrors the key phases of the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework. We started by scraping data from various second-hand car sales websites. The core part of this project was data cleaning and preprocessing, which is crucial the next steps. We then conducted an in-depth data analysis and visualization to identify market trends. Next, we trained and evaluated a machine learning model to predict car prices based on the cleaned data. ",
+      "We finally wrapped everything in PyQt app to allow users to input car attributes and receive price predictions, making the model usable in real-world scenarios.",
     ],
     image: "assets/projects/tayara.png",
-    tools: ["Beautiful Soup", "Selenium", "Scikit-learn", "Pandas", "Seaborn"],
+    tools: ["Scikit-learn", "Pandas", "Seaborn", "Beautiful Soup"],
     links: {
       github:
         "https://github.com/MohamedAzizBellaaj/Data-Analysis-of-Second-hand-Car-Dealerships",

@@ -6,7 +6,7 @@ const educationData = [
     startDate: "2022-09",
     endDate: "2025-06",
     description:
-      "The comprehensive and polyvalent nature of the courses offered at INSAT reflects the university's commitment to providing a well-rounded education. As someone who is still exploring various fields within software engineering, I appreciate the opportunity to delve into diverse subjects and discover where my interests lie. But what I enjoy most about INSAT is the vibrant student life that comes with such a dynamic academic environment. (But I would've enjoyed it more if there was a swimming club)",
+      "The comprehensive and polyvalent nature of the courses offered at INSAT reflects the university's commitment to providing a well-rounded education. As someone who is still exploring various fields within software engineering, I appreciate the opportunity to delve into diverse subjects and discover where my interests lie. But what I enjoy most about INSAT is the vibrant student life that comes with such a dynamic academic environment. (But I would've enjoyed it even more if there was a swimming club)",
     highlights: [
       "Machine learning",
       " Software Architecture",

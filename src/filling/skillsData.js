@@ -5,9 +5,9 @@ const skillsData = {
       "Pytorch",
       "TensorFlow",
       // "Scikit-Learn",
-      "opencv",
-      "numpy",
-      "pandas",
+      "Opencv",
+      "Numpy",
+      "Pandas",
     ],
   },
   Languages: {
@@ -37,18 +37,18 @@ const skillsData = {
       ".NET",
       "Laravel",
       "GraphQL",
-      "figma",
+      // "figma",
       // "tailwind",
       "nodejs",
     ],
   },
   DevOpstools: {
     label: "DevOps tools",
-    skills: ["Git", "Docker"],
+    skills: ["Git", "Docker", "kubernetes", "Github actions"],
   },
   CloudPlatforms: {
     label: "Cloud Platforms",
-    skills: ["microsoft azure", "Google Cloud"],
+    skills: ["Microsoft Azure", "Google Cloud"],
   },
 };
 export default skillsData;
