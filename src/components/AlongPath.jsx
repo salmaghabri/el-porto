@@ -21,9 +21,6 @@ export default function AlongPath() {
 
   return (
     <>
-      <h1 className={`text-5xl text-cherry mt-8`}>
-        I graduated college and all I got is
-      </h1>
       <div ref={container} className="mb-16">
         <svg
           className="w-full "

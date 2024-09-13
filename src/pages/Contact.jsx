@@ -38,21 +38,21 @@ export default function Contact() {
     <>
       <div className="flex flex-col md:flex-row  justify-center px-4 py-16   sm:px-16 sm:py-16 min-h-screen gap-16">
         <div className="flex flex-col justify-between  ">
-          <div className="pls w-full px-6  h-3/5 border-2 text-cherry border-cherry">
-            <h3 className=" sm:text-xl lg:text-[1.85rem] inline-block -mt-[18rem] pt-20 font-medium bg-cream text-cherry font-Cinzel animate-fadeIn ">
+          <div className=" w-full rounded-xl px-6  h-3/5 border-2 text-cherry border-cherry">
+            <h3 className=" sm:text-xl lg:text-[1.85rem] inline-block -mt-[18rem] pt-20 font-semibold bg-cream text-cherry font-Cinzel animate-fadeIn ">
               Thank you for stopping by!
             </h3>
-            <h3 className=" mt-4 text-obsidian text-xl mb-4 font-Vioda font-medium">
+            <h3 className=" mt-8 text-obsidian text-2xl mb-4 font-Vioda font-semibold">
               Got any questions? Or maybe just want to say hi? Feel free to drop
               a message
             </h3>
-            <h3 className="text-obsidian text-xl mb-4 font-Vioda font-medium">
+            <h3 className="text-obsidian text-xl mb-4 font-Vioda font-semibold">
               (Did I mention that I understand English, French, Arabic, and a
-              bit of German )
+              bit of German ?)
             </h3>
           </div>
-          <div className="socials w-full px-6  h-2/5 border-2 text-cherry border-cherry">
-            <h3 className=" sm:text-xl lg:text-3xl inline-block sm:-mt-[10rem] -mt-[8rem] font-medium bg-cream text-cherry font-Cinzel animate-fadeIn ">
+          <div className="socials w-full rounded-xl px-6  h-2/5 border-2 text-cherry border-cherry">
+            <h3 className=" sm:text-xl lg:text-3xl inline-block sm:-mt-[10rem] -mt-[8rem] font-semibold bg-cream text-cherry font-Cinzel animate-fadeIn ">
               You can find me across these platforms
             </h3>
 
@@ -84,12 +84,12 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="form w-[20%]  sm:w-4/5 md:w-2/3 p-8  shadow-lg rounded-lg font-Vioda">
+        <div className="form w-[20%]  sm:w-4/5 md:w-2/3 p-8  shadow-lg rounded-lg font-Vioda font-semibold">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-obsidian font-medium text-lg mb-2"
+                className="block text-obsidian font-semibold text-lg mb-2"
               >
                 Dear Salma,
               </label>
@@ -100,13 +100,13 @@ export default function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-3 py-2 focus:outline-none font-Vioda  font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda  "
+                className="w-full px-3 py-2 focus:outline-none font-Vioda  font-semibold text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-semibold sm:placeholder:font-semmibold sm:placeholder:text-sm placeholder:font-Vioda  "
                 rows="6"
                 placeholder="I'm writing to remind you to touch grass"
                 required
               ></textarea>
             </div>
-            <div className="flex gap-1 items-center font-medium">
+            <div className="flex gap-1 items-center font-semibold">
               <label>Sincerely,</label>
               <input
                 type="email"
@@ -114,7 +114,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-1/2 px-3 py-2 focus:outline-none font-Vioda font-medium text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-medium sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda "
+                className="w-1/2 px-3 py-2 focus:outline-none font-Vioda font-semibold text-xl bg-transparent placeholder-cherry placeholder-opacity-80 placeholder:font-semibold sm:placeholder:font-light sm:placeholder:text-sm placeholder:font-Vioda "
                 placeholder="Sign with email"
                 required
               />

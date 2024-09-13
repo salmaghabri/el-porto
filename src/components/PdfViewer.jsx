@@ -1,6 +1,6 @@
 export default function PdfViewer() {
   return (
-    <div>
+    <div className="z-[500000]">
       <iframe
         src={`/${"Salma-Ghabri-Resume.pdf"}`}
         width="100%"
@@ -10,5 +10,3 @@ export default function PdfViewer() {
     </div>
   );
 }
-
-PdfViewer;

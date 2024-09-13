@@ -1,14 +1,7 @@
 const actualFromCollege = [
-  "DSA ",
-  "Machine Learning ",
-  "Language Theory",
-  "Logic",
-  "Language Theory",
-  "Logic",
-  "Language Theory",
-  "Logic",
-  "Language Theory",
-  "Logic",
+  "financae , trust funds, six five ,blue eyes ",
+  "financae , trust funds, six five ,blue eyes",
+  "financae , trust funds, six five ,blue eyes",
 ];
 
 export default actualFromCollege;

@@ -6,6 +6,7 @@ import { useRef, useEffect } from "react";
 import fromCollege from "../filling/fromCollege";
 import actualFromCollege from "../filling/actualFromCollege";
 import Footer from "../components/Footer";
+import AlongPath from "../components/AlongPath";
 
 export default function About() {
   const container = useRef();
@@ -17,25 +18,28 @@ export default function About() {
     offset: ["start end", "end end"],
   });
 
-  const offset = 40;
+  const offset = 70;
   const offset2 = 20;
-
   useEffect(() => {
     scrollYProgress.on("change", (e) => {
       paths.current.forEach((path, i) => {
         path.setAttribute(
           "startOffset",
-          -offset + i * offset + e * offset + "%"
-        );
-      });
-      paths2.current.forEach((path, i) => {
-        path.setAttribute(
-          "startOffset",
-          -offset2 + i * offset2 + e * offset2 + "%"
+          -offset + i * offset + e * offset * 2 + "%"
         );
       });
     });
   }, []);
+  // useEffect(() => {
+  //   scrollYProgress.on("change", (e) => {
+  //     paths.current.forEach((path, i) => {
+  //       path.setAttribute(
+  //         "startOffset",
+  //         -offset + i * offset + e * offset + "%"
+  //       );
+  //     });
+  //   });
+  // }, []);
 
   return (
     <>
@@ -43,13 +47,34 @@ export default function About() {
         className="flex flex-col w-full px-4 sm:px-8 lg:px-16"
         ref={container}
       >
-        <section className="border-b-4 border-r-4 mt-10 sm:mt-20 border-cherry flex flex-col">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-cherry font-Cinzel w-full sm:w-2/3 lg:w-1/3 mt-4 sm:mt-8">
-            I'm about to graduate college and I'm looking for an internship, in
-            financae , trust funds, six five ,blue eyes
-          </h1>
-          {/* <div className="relative w-full">
-            <svg
+        <section className="hidden border-b-4 border-r-4 mt-10 sm:mt-20 border-cherry  flex-col">
+          {/* <div className="flex"> */}
+          {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl text-cherry font-Cinzel w-full sm:w-2/3 lg:w-1/3 mt-4 sm:mt-8">
+            </h1> */}
+          <svg className="w-1/2 mb-40" viewBox="0 0 250 90">
+            <path
+              id="curve"
+              fill="none"
+              stroke="none"
+              d="m0,88.5c61.37,0,61.5-68,126.5-68,58,0,51,68,123,68"
+            />
+            <text className="text-[6px] uppercase" style={{ fill: "red" }}>
+              {[...Array(4)].map((_, i) => {
+                return (
+                  <textPath
+                    key={i}
+                    ref={(ref) => (paths.current[i] = ref)}
+                    startOffset={i * offset + "%"}
+                    href="#curve"
+                  >
+                    I'm about to graduate college and I'm looking for an
+                    internship
+                  </textPath>
+                );
+              })}
+            </text>
+          </svg>
+          {/* <svg
               className="w-full"
               viewBox="0 0 620 90"
               fill="none"
@@ -63,45 +88,22 @@ export default function About() {
                 className="text-[4px] sm:text-[6px]"
                 style={{ fill: "#d86072" }}
               >
-                {fromCollege.map((soFunny, i) => (
+                 {[...Array(4)].map((_, i) => {
+                return (
                   <textPath
                     key={i}
                     ref={(ref) => (paths.current[i] = ref)}
                     startOffset={i * offset + "%"}
                     href="#curve"
                   >
-                    {soFunny}
+                    I'm about to graduate college and I'm looking for an
+                    internship
                   </textPath>
-                ))}
+                );
+              })}
               </text>
-            </svg>
-            <svg
-              className="absolute -top-1/4 w-full"
-              viewBox="0 0 711 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 36.8008C139.903 42.6597 277.933 25.9411 413.175 10.7021C469.626 4.3412 528.497 -3.01468 585.111 6.70571C611.244 11.1926 634.616 19.582 658 27.9925"
-                id="curve2"
-              />
-              <text
-                className="text-[4px] sm:text-[5px]"
-                style={{ fill: "#d86072" }}
-              >
-                {actualFromCollege.map((notFunny, i) => (
-                  <textPath
-                    key={i}
-                    ref={(ref) => (paths2.current[i] = ref)}
-                    startOffset={i * offset2 + "%"}
-                    href="#curve2"
-                  >
-                    {notFunny}
-                  </textPath>
-                ))}
-              </text>
-            </svg>
-          </div> */}
+            </svg> */}
+          {/* </div> */}
         </section>
 
         <section className="border-b-4 border-l-4 border-cherry">
@@ -109,16 +111,20 @@ export default function About() {
             Hi
           </div>
           <div className="flex flex-col sm:flex-row mb-6 sm:mb-12">
-            <p className="font-Vioda w-full sm:max-w-full p-6 sm:p-12 lg:p-24">
-              I'm Salma Ghabri, an aspiring software engineer with a passion for
-              problem-solving and innovation. My journey in software development
-              has been shaped by diverse experiences, from building full-stack
-              web applications to conducting research in computer vision. I
-              thrive in challenging environments that require creative thinking
-              and adaptability. Whether it's mastering new technologies or
-              working within dynamic teams, I'm committed to continuous learning
-              and delivering impactful solutions.
-            </p>
+            <div className="font-Vioda font-semibold w-full sm:text-xl sm:max-w-full p-6 sm:p-12 lg:p-24">
+              <p className="">
+                I'm Salma Ghabri, a software engineering student from Tunisia.
+                I'm passionate about engineering and the process of building
+                useful and reliable systems. My journey in software engineering
+                has been shaped by diverse experiences, from building full-stack
+                web applications to conducting research in computer vision. And
+                so far, each step has deepened my appreciation for engineering.
+              </p>
+              <p className="font-Vioda font-semibold w-full sm:text-xl ">
+                ps: I'm currently in my final semester and actively seeking an
+                end-of-studies internship
+              </p>
+            </div>
             <div
               className=" rounded-tl-full rounded-tr-full self-end sm:self-auto  w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] bg-cover"
               style={{ backgroundImage: `url(assets/eni.jpg)` }}
@@ -132,9 +138,11 @@ export default function About() {
           </h1>
           <div className="flex flex-col-reverse sm:flex-row pt-6 sm:pt-12">
             <SkillsContainer />
-            <p className="font-Vioda font-semibold text-lg sm:text-xl">
-              This is what I am familiar with: either studied at uni or used for
-              work
+            <p className="font-Vioda font-semibold text-lg sm:text-xl w-1/3">
+              This is what I am most familiar with: either studied at university
+              or used for work. I'm well aware that technologies evolve but I’ve
+              picked up the core principles that make learning new languages and
+              technologies feel like second nature.
             </p>
           </div>
         </section>
