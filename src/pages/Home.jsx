@@ -11,7 +11,7 @@ export default function Home() {
           Salma <span className="ml-16">Ghabri</span>
         </div>
         <p
-          className={`sm:text-lg md:text-xl lg:text-2xl  text-transparent  bg-clip-text bg-gradient-to-tl from-cherry via-obsidian to-lime self-end font-Cinzel font-bold`}
+          className={`sm:text-lg md:text-xl lg:text-2xl  text-transparent  bg-clip-text bg-gradient-to-l from-obsidian via-obsidian to-obsidian self-end font-Vioda font-bold`}
         >
           An engineer (in the making).
         </p>
