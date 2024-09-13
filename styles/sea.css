@@ -223,8 +223,8 @@
 .sun {
   background: white;
   border-radius: 50%;
-  width: 23vmin;
-  height: 23vmin;
+  width: 27vmin;
+  height: 27vmin;
   left: calc(50% + 9vmin);
   top: 100%;
   transform: translate3d(0, 0, 0);
