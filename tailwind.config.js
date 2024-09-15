@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         Caprasimo: ["Caprasimo", "Arial", "sans-serif"],
+        Alegreya: ["Alegreya", "Arial", "sans-serif"],
         Cinzel: ["Cinzel Decorative", "Arial", "sans-serif"],
         Vioda: ["Viaoda Libre", "Arial", "sans-serif"],
         serif: ["Open Sans", "Georgia", "serif"],

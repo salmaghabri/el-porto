@@ -45,7 +45,7 @@ const Card = ({
                   .map((highlight, idx) => (
                     <p
                       key={idx}
-                      className="text-sm sm:text-base text-obsidian font-Vioda font-semibold"
+                      className="text-sm sm:text-base text-obsidian font-semibold"
                     >
                       {highlight}
                     </p>

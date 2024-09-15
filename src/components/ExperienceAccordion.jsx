@@ -46,7 +46,7 @@ export default function ExperienceAccordion() {
             </div>
           </button>
           <div
-            className={`overflow-hidden transition-all duration-500 ease-in-out  p-4 border-4 border-cherry  border-t-0 font-Vioda font-semibold text-3xl ${
+            className={`overflow-hidden transition-all duration-500 ease-in-out  p-4 border-4 border-cherry  border-t-0 font-semibold text-3xl ${
               openIndices.includes(index)
                 ? "max-h-[500px] opacity-100"
                 : "max-h-0 opacity-0"
@@ -56,7 +56,10 @@ export default function ExperienceAccordion() {
 
             <ul className="custom-list list-outside  mt-2">
               {experience.description.map((desc, i) => (
-                <li key={i} className="text-sm text-obsidian custom-list-item">
+                <li
+                  key={i}
+                  className="text-base text-obsidian custom-list-item"
+                >
                   {desc}
                 </li>
               ))}

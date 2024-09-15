@@ -25,7 +25,7 @@ export default function EducationTimeline() {
               <h3 className="text-base sm:text-lg text-cherry font-Cinzel font-semibold ">
                 {edu.area}
               </h3>
-              <p className="text-xs sm:text-sm text-gray-500 font-Vioda font-semibold">
+              <p className="text-xs sm:text-sm text-gray-500 font-semibold">
                 {edu.link ? (
                   <span className="animated-link">
                     <a
@@ -42,7 +42,7 @@ export default function EducationTimeline() {
                 | {edu.startDate} - {edu.endDate}
               </p>
 
-              <p className="text-sm sm:text-base font-Vioda font-semibold text-obsidian">
+              <p className="text-sm sm:text-base font-semibold text-obsidian">
                 {edu.description}
               </p>
               <div className="mt-2 flex gap-2 sm:gap-3 flex-wrap ">

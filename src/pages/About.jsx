@@ -111,7 +111,7 @@ export default function About() {
             Hi
           </div>
           <div className="flex flex-col sm:flex-row mb-6 sm:mb-12">
-            <div className="font-Vioda font-semibold w-full sm:text-xl sm:max-w-full p-6 sm:p-12 lg:p-24">
+            <div className=" w-full sm:text-xl sm:max-w-full p-6 sm:p-12 font-semibold lg:p-24">
               <p className="">
                 I'm Salma Ghabri, a software engineering student from Tunisia.
                 I'm passionate about engineering and the process of building
@@ -120,7 +120,7 @@ export default function About() {
                 web applications to conducting research in computer vision. And
                 so far, each step has deepened my appreciation for engineering.
               </p>
-              <p className="font-Vioda font-semibold w-full sm:text-xl ">
+              <p className=" w-full sm:text-xl ">
                 ps: I'm currently in my final semester and actively seeking an
                 end-of-studies internship
               </p>
@@ -138,7 +138,7 @@ export default function About() {
           </h1>
           <div className="flex flex-col-reverse sm:flex-row pt-6 sm:pt-12">
             <SkillsContainer />
-            <p className="font-Vioda font-semibold text-lg sm:text-xl w-1/3">
+            <p className="font-semibold text-lg sm:text-xl sm:w-1/3">
               This is what I am most familiar with: either studied at university
               or used for work. I'm well aware that technologies evolve but I’ve
               picked up the core principles that make learning new languages and

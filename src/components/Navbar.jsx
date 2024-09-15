@@ -22,9 +22,7 @@ export default function Navbar() {
           onClick={toggleNavbar}
           className="text-lime bg-none p-2 pt-0 rounded-md focus:outline-none"
         >
-          {isOpen ? (
-            "Close"
-          ) : (
+          {!isOpen && (
             <svg
               className="fill-cherry"
               width="32px"
@@ -57,27 +55,27 @@ export default function Navbar() {
 
       <nav
         className={`${
-          isOpen
-            ? " fixed inset-0 bg-gradient-to-tr from-lime via-cream to-lime"
-            : "hidden"
-        } sm:block fixed right-0 bg-none text-cherry p-2 sm:p-2 z-40 h-full sm:h-16 flex sm:justify-end sm:items-end`}
+          isOpen ? " fixed inset-0  " : "hidden"
+        } sm:block fixed right-0 bg-none text-obsidian sm:text-cherry p-0 sm:p-2 z-40 h-full sm:h-16 flex sm:justify-end sm:items-end `}
       >
         {isOpen && (
-          <div className="absolute top-0 right-4 z-30 h-[32px]  w-[32px] font-bold ">
+          <div className="absolute top-0 right-4 z-30 h-[32px]  w-[32px] font-bold block sm:h-[0] sm:w-[0]">
             <button
               onClick={toggleNavbar}
-              className="text-cherry p-2 rounded-full focus:outline-none"
+              className="text-cherry p-2 rounded-full focus:outline-none sm:hidden"
             >
               ✕
             </button>
           </div>
         )}
 
-        <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-full sm:h-fit w-full sm:w-fit justify-center items-center sm:items-end sm:justify-end gap-4 sm:gap-[10px] rounded-br-[15px] sm:rounded-br-[20px] rounded-bl-[15px] sm:rounded-bl-[20px] border-none sm:border-y-[0.075rem] sm:border-lime sm:p-[10px] sm:backdrop-blur-[15px] bg-cream sm:bg-transparent font-Cinzel font-semibold">
+        <ul className=" flex  flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-full sm:h-fit w-full sm:w-fit justify-center items-center sm:items-end sm:justify-end gap-4 sm:gap-[10px] rounded-br-[15px] sm:rounded-br-[20px] rounded-bl-[15px] sm:rounded-bl-[20px] border-none sm:border-y-[0.075rem] sm:border-lime sm:p-[10px] backdrop-blur-[15px] bg-transparent font-Cinzel font-semibold">
           <li>
             <Link
               to="/"
-              className={`${location.pathname === "/" ? "text-lime " : ""}`}
+              className={`${
+                location.pathname === "/" ? " text-cherry sm:text-lime " : ""
+              }`}
               onClick={handleLinkClick}
             >
               Home
@@ -87,7 +85,9 @@ export default function Navbar() {
             <Link
               to="/about"
               className={`${
-                location.pathname === "/about" ? "text-lime " : ""
+                location.pathname === "/about"
+                  ? " text-cherry sm:text-lime "
+                  : ""
               }`}
               onClick={handleLinkClick}
             >
@@ -98,7 +98,9 @@ export default function Navbar() {
             <Link
               to="/projects"
               className={`${
-                location.pathname === "/projects" ? "text-lime " : ""
+                location.pathname === "/projects"
+                  ? " text-cherry sm:text-lime "
+                  : ""
               }`}
               onClick={handleLinkClick}
             >
@@ -109,7 +111,9 @@ export default function Navbar() {
             <Link
               to="/contact"
               className={`${
-                location.pathname === "/contact" ? "text-lime " : ""
+                location.pathname === "/contact"
+                  ? " text-cherry sm:text-lime "
+                  : ""
               }`}
               onClick={handleLinkClick}
             >

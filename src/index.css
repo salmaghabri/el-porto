@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: #fff6ee;
   scroll-behavior: smooth;
+  @apply font-Alegreya;
 }
 .form {
   width: 100%;

@@ -42,11 +42,11 @@ export default function Contact() {
             <h3 className=" sm:text-xl lg:text-[1.85rem] inline-block -mt-[18rem] pt-20 font-semibold bg-cream text-cherry font-Cinzel animate-fadeIn ">
               Thank you for stopping by!
             </h3>
-            <h3 className=" mt-8 text-obsidian text-2xl mb-4 font-Vioda font-semibold">
+            <h3 className=" mt-8 text-obsidian text-2xl mb-4 font-medium">
               Got any questions? Or maybe just want to say hi? Feel free to drop
               a message
             </h3>
-            <h3 className="text-obsidian text-xl mb-4 font-Vioda font-semibold">
+            <h3 className="text-obsidian text-base mb-4 font-medium">
               (Did I mention that I understand English, French, Arabic, and a
               bit of German ?)
             </h3>
@@ -84,12 +84,12 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="form w-[20%]  sm:w-4/5 md:w-2/3 p-8  shadow-lg rounded-lg font-Vioda font-semibold">
+        <div className="form w-[20%]  sm:w-4/5 md:w-2/3 p-8  shadow-lg rounded-lg  font-semibold">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-obsidian font-semibold text-lg mb-2"
+                className="block text-obsidian font-Vioda text-lg mb-2"
               >
                 Dear Salma,
               </label>
@@ -106,7 +106,7 @@ export default function Contact() {
                 required
               ></textarea>
             </div>
-            <div className="flex gap-1 items-center font-semibold">
+            <div className="flex gap-1 items-center font-semibold font-Vioda">
               <label>Sincerely,</label>
               <input
                 type="email"
