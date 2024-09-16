@@ -45,7 +45,7 @@ const educationData = [
       "This is when I first met the dreaded alpha-delta definition of continuity and this is the when I first witnessed the grand crossover of physics and math. Fun times.",
     highlights: [
       "Calculus",
-      " Linear Algebra",
+      " Physics",
       " German",
       " Biology",
       " Pascal",
@@ -59,13 +59,7 @@ const educationData = [
     endDate: "2016-06",
     description:
       "Where I dicovered the untamed, never-ending irrational numbers. Square root of 2, you are wild. ",
-    highlights: [
-      "Mathematics",
-      "geometry",
-      " History",
-      " Geography",
-      "Biology",
-    ],
+    highlights: ["Mathematics", "Geometry", " History", " Geography"],
   },
   // {
   //   institution: "National Institute of Applied Science and Technology",

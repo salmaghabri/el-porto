@@ -3,15 +3,11 @@ import ExperienceAccordion from "../components/ExperienceAccordion";
 import SkillsContainer from "../components/SkillsContainer";
 import { useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
-import fromCollege from "../filling/fromCollege";
-import actualFromCollege from "../filling/actualFromCollege";
 import Footer from "../components/Footer";
-import AlongPath from "../components/AlongPath";
 
 export default function About() {
   const container = useRef();
   const paths = useRef([]);
-  const paths2 = useRef([]);
 
   const { scrollYProgress } = useScroll({
     target: container,
@@ -19,7 +15,6 @@ export default function About() {
   });
 
   const offset = 70;
-  const offset2 = 20;
   useEffect(() => {
     scrollYProgress.on("change", (e) => {
       paths.current.forEach((path, i) => {

@@ -84,7 +84,7 @@ export const projects = [
   {
     name: "This website",
     description: [
-      "A portfolio website where I can say everything I can’t fit into a CV (and freely yap)",
+      "A portfolio website where I can say everything I can’t fit into a CV ",
       " aaaaand creating a website where I make the rules (that explains the design quirks and the offbeat typography) doesn't happen very often.",
     ],
     image: "assets/projects/porto.png",

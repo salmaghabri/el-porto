@@ -32,7 +32,6 @@ const experiences = [
       "Conducted an extensive literature review on deep learning techniques for change detection in multispectral satellite images.",
       "Enhanced a deep learning model to detect changes in multispectral satellite images over time.",
       "Improved the model's F1 score through feature engineering and dimensionality reduction techniques, focusing on significant alterations in geographical features and land use patterns.",
-      "Achieved a score of 90% for this project.",
     ],
   },
   {
@@ -54,7 +53,7 @@ const experiences = [
     description: [
       "Selected to participate in the METI internship program at the Japanese company Dots for Inc.",
       "Worked on the front end of a streaming web application.",
-      "Showcased internship achievements in a professional online webinar presentation.",
+      "Showcased internship achievements in a professional during an online webinar.",
     ],
   },
 ];
