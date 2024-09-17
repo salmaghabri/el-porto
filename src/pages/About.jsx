@@ -117,7 +117,7 @@ export default function About() {
               </p>
               <p className=" w-full sm:text-xl ">
                 ps: I'm currently in my final semester and actively seeking an
-                end-of-studies internship
+                end-of-studies internship.
               </p>
             </div>
             <div

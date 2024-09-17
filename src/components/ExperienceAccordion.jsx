@@ -42,7 +42,7 @@ export default function ExperienceAccordion() {
                 openIndices.includes(index) ? "rotate-[135deg]" : "rotate-0"
               }`}
             >
-              <p className="text-3xl text-lime font-Cinzel font-bold">+</p>
+              <p className="text-3xl text-lime font-Vioda font-bold">+</p>
             </div>
           </button>
           <div
@@ -52,7 +52,9 @@ export default function ExperienceAccordion() {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-sm text-obsidian text-end">{experience.dates}</p>
+            <p className="text-sm text-obsidian text-end font-Vioda">
+              {experience.dates}
+            </p>
 
             <ul className="custom-list list-outside  mt-2">
               {experience.description.map((desc, i) => (

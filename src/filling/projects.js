@@ -8,7 +8,7 @@ export const projects = [
       "Method 2 directly integrates YOLOv9 within AlphaPose, replacing YOLOv3 entirely, ensuring a seamless flow between detection and pose estimation stages.",
     ],
     image: "assets/projects/tennis.png",
-    tools: [" OpenCV", " Pytorch"],
+    tools: ["OpenCV", "Pytorch"],
     links: {
       garden:
         "https://salmaghabri.github.io/PFA-wiki/Object-Detection-and-Pose-Ectimation/",
@@ -17,11 +17,11 @@ export const projects = [
   {
     name: "Deep Learning for Change Detection in Satelite Images",
     description: [
-      "During my fourth year as a software engineering student, I worked on an end-of-year project to enhance a deep learning model for detecting changes in multispectral satellite images over time. The project spanned the entire second semester, and we built upon the foundational work of the reference paper 'A Deep Learning Model for Change Detection on Satellite Images' As part of this project, we conducted a comprehensive literature review on remote sensing indices and semantic segmentation in satellite imagery. By leveraging remote sensing indices for feature engineering and band selection, along with  and dimensionality reduction techniques, we improved the model’s F1 score and global accuracy",
-      " This marked my first exploration into the interesting intersection of remote sensing and machine learning",
+      "During my fourth year as a software engineering student, I worked on an end-of-year project to enhance a deep learning model for detecting changes in multispectral satellite images over time. The project spanned the entire second semester, and we built upon the foundational work of the reference paper 'A Deep Learning Model for Change Detection on Satellite Images'. As part of this project, we conducted a comprehensive literature review on remote sensing indices and semantic segmentation in satellite imagery. By leveraging remote sensing indices for feature engineering, along with band selection techniques, we improved the model’s F1 score and global accuracy",
+      "This marked my first exploration into the interesting intersection of remote sensing and machine learning",
     ],
     image: "assets/projects/fresunet.png",
-    tools: ["Pandas", " Numpy", " Pytorch"],
+    tools: ["Pandas", "Numpy", "Pytorch"],
     links: {
       kaggle: "https://www.kaggle.com/code/salmaghabri/pffa-change-detection",
       garden: "https://salmaghabri.github.io/PFA-wiki/Change-Detection/",
@@ -35,7 +35,7 @@ export const projects = [
       "We based our solution on the Lambda architecture, simulating a data stream from a CSV file containing weather data. The CSV file represented both the data at rest and the stream of incoming data. For batch processing, we computed the average temperature for each capital, while the streaming component extracted the maximum average temperature in real-time for each capital. The data was stored in a NoSQL database and later visualized in real-time through a web application.",
     ],
     image: "assets/projects/ta9sn.png",
-    tools: ["  Hadoop", " Spark", " MongoDB", " Express", " React"],
+    tools: [" Hadoop", "Spark", "MongoDB", "Express", "React"],
     links: {
       github: "https://github.com/louaybadri/WeatherBigData",
     },
@@ -60,11 +60,11 @@ export const projects = [
     name: "DB Synchronisation Application",
     description: [
       "This project was part of Distributed Systems course where we were asked to develop application for synchronizing sales data between a Head Office (HO) and two Branch Offices (BOs) (analogous to functionalities provided by Talend)",
-      " The applciation  Supports CRUD operations for managing product information. It utilizes RabbitMQ message queues to to handle real-time messaging and updates and Tkinter for the GUI ",
-      " This app implements message persistence and queue durability to handle system failures and ensure data integrity. ",
+      "The applciation  Supports CRUD operations for managing product information. It utilizes RabbitMQ message queues to to handle real-time messaging and updates and Tkinter for the GUI ",
+      "This app implements message persistence and queue durability to handle system failures and ensure data integrity. ",
     ],
     image: "assets/projects/rabbit.png",
-    tools: ["RabbitMQ", " Tkinter", "MySQL"],
+    tools: ["RabbitMQ", "Tkinter", "MySQL"],
     links: {
       github: "https://github.com/salmaghabri/DB-Synchronisation",
     },
@@ -72,7 +72,7 @@ export const projects = [
   {
     name: "Wikilinks To md toggler Obsidian Plugin",
     description: [
-      " An Obsidian plugin that toggles highlighted text between wikilink and markdown formats.",
+      "An Obsidian plugin that toggles highlighted text between wikilink and markdown formats.",
       "I love Obsidian (a lot) and I found myself searching for a plugin with this functionality, but came up empty-handed. So, I figured it was the perfect chance to build it myself and contribute something useful to the Obsidian community",
     ],
     image: "assets/projects/wikilinks.png",
@@ -85,10 +85,10 @@ export const projects = [
     name: "This website",
     description: [
       "A portfolio website where I can say everything I can’t fit into a CV ",
-      " aaaaand creating a website where I make the rules (that explains the design quirks and the offbeat typography) doesn't happen very often.",
+      "aaaaand creating a website where I make the rules (that explains the design quirks and the offbeat typography) doesn't happen very often.",
     ],
     image: "assets/projects/porto.png",
-    tools: ["React", " TailwindCSS", "Framer Motion"],
+    tools: ["React", "TailwindCSS", "Framer Motion"],
     links: {
       github: "https://github.com/salmaghabri/el-porto-del-farina",
     },

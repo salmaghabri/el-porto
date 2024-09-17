@@ -30,8 +30,8 @@ const experiences = [
     location: "Tunis",
     description: [
       "Conducted an extensive literature review on deep learning techniques for change detection in multispectral satellite images.",
-      "Enhanced a deep learning model to detect changes in multispectral satellite images over time.",
-      "Improved the model's F1 score through feature engineering and dimensionality reduction techniques, focusing on significant alterations in geographical features and land use patterns.",
+      "Based our study on a published paper that explored deep learning techniques for change detection in multispectral satellite images.",
+      "Used the same model architecture from the paper and enhanced it to improve the F1 score and global accuracy through feature engineering and band selection techniques.",
     ],
   },
   {
@@ -41,7 +41,7 @@ const experiences = [
     location: "Tunis",
     description: [
       "Implemented a career assessment and tracking platform for the esteemed organization from concept to completion.",
-      "Utilized Spring Boot for the backend, Angular for the frontend and Postgres for data persistence.",
+      "Utilized Spring Boot for the backend, Angular for the frontend and Postgres for the database.",
       "Containerized the website using Docker.",
     ],
   },
@@ -53,7 +53,7 @@ const experiences = [
     description: [
       "Selected to participate in the METI internship program at the Japanese company Dots for Inc.",
       "Worked on the front end of a streaming web application.",
-      "Showcased internship achievements in a professional during an online webinar.",
+      "Showcased internship achievements during an online conference.",
     ],
   },
 ];
