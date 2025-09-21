@@ -194,3 +194,30 @@ body {
 [data-title] {
   position: relative;
 }
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.strike-animation {
+  animation: strike 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.animate-fade {
+  animation: fade 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
